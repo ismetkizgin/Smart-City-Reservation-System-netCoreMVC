@@ -1,0 +1,85 @@
+﻿@model object
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/_Layout.cshtml";
+}
+<div class="container col-12">
+    <div class="card border-warning mb-3">
+        <div class="card-header border-warning mb-3">Kayıt</div>
+        <div class="card-body border-warning mb-3">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName4">Ad</label>
+                        <input type="text" class="form-control" id="inputName4" placeholder="Ad">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputLastName4">Soyad</label>
+                        <input type="text" class="form-control" id="inputLastName4" placeholder="Soyad">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="inputGender4">Cinsiyet</label>
+                        <br />
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Man">
+                            <label class="form-check-label" for="inlineRadio1">Erkek</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Kadın</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="inputEmail4">Mail Adresi</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Mail">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword4">Şifre</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Şifre">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword5">Şifre Tekrar</label>
+                        <input type="password" class="form-control" id="inputPassword5" placeholder="Şifre Tekrar">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Adres</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Adres">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputProvince">İl</label>
+                        <input type="text" class="form-control" id="inputProvince" placeholder="İl">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDistrict">İlçe</label>
+                        <select id="inputDistrict" class="form-control">
+                            <option selected>Seç...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputAddress">Telefon</label>
+                        <input type="tel" class="form-control" id="inputAddress" placeholder="Telefon">
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                        <button type="submit" class="btn btn-success">Kayıt Ol</button>
+                    <div class="form-check col-md-3" style="margin-left: 100px; margin-top: -35px;">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Beni Hatırla
+                        </label>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+<div>
+    <div class="container">
+        <br /><br />
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1501393339538-7020c4f5468d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="Otopark">
+                    <div class="card-body">
+                        <h5 class="card-title">Otopark</h5>
+                        <p class="card-text">Akıllı otopark sistemi ile size en yakın otoparkı bulabilir, yol tarifi alabilir, otoparktaki boş alanları görebilir ve rezervasyon yapabilirsiniz.</p>
+                        <a asp-controller="Otopark" asp-action="Reservation" class="btn btn-success">Rezervasyon Yap</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1488672219853-a0281f9ac59d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80" class="card-img-top" alt="benzinlik" style="">
+                    <div class="card-body">
+                        <h5 class="card-title">Benzin istasyonu</h5>
+                        <p class="card-text">Akıllı benzin istasyonu sistemi ile size en yakın benzin istasyonunu görebilir, yol tarifi alabilir ve araç bakımı için rezervasyon yapabilirsiniz.</p>
+                        <a asp-controller="PetrolStation" asp-action="Reservation" class="btn btn-success">Rezervasyon yap</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1556741533-927182355585?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="eczane" style="">
+                    <div class="card-body">
+                        <h5 class="card-title">Eczane</h5>
+                        <p class="card-text">Akıllı eczane sistemi ile size en yakın eczaneyi görebilir ve reçete kodunuzu girerek ilaçlarınızın hazırlanmasını sağlayabilirsiniz.</p>
+                        <a asp-controller="Pharmacy" asp-action="Reservation" class="btn btn-success">Rezervasyon yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

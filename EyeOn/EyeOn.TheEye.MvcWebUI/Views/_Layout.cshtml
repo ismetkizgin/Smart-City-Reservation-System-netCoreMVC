@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+
+
+    <style>
+        /*Layout*/
+        .social {
+            padding: 18px;
+            font-size: 25px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            color: black !important;
+        }
+
+        .bg-soft-dark {
+            background-color: #21252900;
+        }
+
+        .page-footer {
+            background-color: black;
+        }
+
+        .navigation {
+            font-weight: 700 !important;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12) !important;
+            padding: 50px;
+        }
+
+        .account {
+            margin-left: 200px;
+        }
+
+        .center-text {
+            font-family: 'ZCOOL XiaoWei', serif;
+            font-size: 30px;
+            color: black;
+        }
+
+        .nav-link {
+            font-size: 20px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .btn-warning {
+            border-radius: 50px;
+        }
+
+        /*HomeIndex*/
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+
+        /*AccountLogin*/
+        .close {
+            float: right;
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 1;
+            color: #000;
+            text-shadow: 0 1px 0 #fff;
+            filter: alpha(opacity=20);
+            opacity: .2;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+                filter: alpha(opacity=50);
+                opacity: .5;
+            }
+    </style>
+
+
+</head>
+<body>
+    <section class="overflow-auto">
+        <nav class="navbar navbar-dark bg-primary">
+            <a asp-controller="Home" asp-action="Index" class="navbar-brand" style="color: black !important;">
+                Logo
+            </a>
+            <div>
+                <a href="#" class="fa fa-facebook social" target="_blank"></a>
+                <a href="#" class="fa fa-twitter social" target="_blank"></a>
+                <a href="#" class="fa fa-instagram social" target="_blank"></a>
+                <a href="#" class="fa fa-phone social" style="color: black !important; ;"></a>
+                <a style="color: black !important;">0 555 555 55 55</a>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-soft-dark">
+            <div class="container py-2">
+
+                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbar-theeye" aria-controls="navbar-theeye" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-start" id="navbar-theeye">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a asp-controller="Home" asp-action="Index" class="nav-link text-warning"><b>Anasayfa</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b>İletişim</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b>Hakkında</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b>Hizmetler</b></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-theeye">
+                    <ul class="nav d-flex">
+                        <li class="nav-item">
+                            <a asp-controller="Account" asp-action="Login" class="nav-link text-dark"><b>Giriş Yap</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Account" asp-action="Register" class="nav-link text-dark"><b>Kayıt Ol</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br />
+        <div class="container">
+            @RenderBody()
+        </div>
+
+    <div>
+        <footer class="col-12 page-footer font-small blue pt-4 text-white">
+
+            <div class="container-fluid text-center text-md-left">
+
+                <div class="row">
+
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                        <h5 class="text-uppercase">Footer Content</h5>
+                        <p>Here you can use rows and columns to organize your footer content.</p>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 4</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 4</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-copyright text-center py-3">
+                © 2019 Copyright:
+                EyeOn
+            </div>
+
+        </footer>
+    </div>
+</body>
+</html>
