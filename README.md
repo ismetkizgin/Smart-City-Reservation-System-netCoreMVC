@@ -1,1 +1,3 @@
 # Smart-City-Reservation-System
+
+## Proje yapım aşamasında...
