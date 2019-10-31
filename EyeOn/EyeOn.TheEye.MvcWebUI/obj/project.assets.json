@@ -8044,11 +8044,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Web Projects\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj",
+      "projectUniqueName": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj",
       "projectName": "EyeOn.TheEye.MvcWebUI",
-      "projectPath": "D:\\Web Projects\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj",
+      "projectPath": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj",
       "packagesPath": "C:\\Users\\Alihan\\.nuget\\packages\\",
-      "outputPath": "D:\\Web Projects\\EyeOn\\EyeOn.TheEye.MvcWebUI\\obj\\",
+      "outputPath": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\EyeOn\\EyeOn.TheEye.MvcWebUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
