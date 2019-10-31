@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace EyeOn.TheEye.MvcWebUI
 {
+    //ismet kizgin
     public class Program
     {
         public static void Main(string[] args)
