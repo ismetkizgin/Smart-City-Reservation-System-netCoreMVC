@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.Business\\TheEye.Business.csproj": {}
+    "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\TheEye\\TheEye.Business\\TheEye.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.Business\\TheEye.Business.csproj": {
+    "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\TheEye\\TheEye.Business\\TheEye.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.Business\\TheEye.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\TheEye\\TheEye.Business\\TheEye.Business.csproj",
         "projectName": "TheEye.Business",
-        "projectPath": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.Business\\TheEye.Business.csproj",
-        "packagesPath": "C:\\Users\\ismet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.Business\\obj\\",
+        "projectPath": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\TheEye\\TheEye.Business\\TheEye.Business.csproj",
+        "packagesPath": "C:\\Users\\Alihan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\TheEye\\TheEye.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ismet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Users\\Alihan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\DevExpess\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
