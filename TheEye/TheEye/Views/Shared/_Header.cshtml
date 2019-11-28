@@ -1,0 +1,63 @@
+﻿<div class="content_header">
+    <div class="container">
+        <div class="row text-muted">
+            <div class="col-md-6 align-md-center align-sm-center">
+                <i class="fa fa-phone"></i>
+                <span class="mobile-phone">
+                    <a class="text-muted" href="tel:+905393834430"> 539 383 44 30</a>
+                </span>
+
+                <span class="desktop-phone"> 539 383 44 30</span>
+            </div>
+
+            <div class="col-md-6 align-md-center align-sm-center">
+                <i class="fas fa-envelope"></i> <a class="text-muted" href="mailto:ismetkizgin@hotmail.com">ismetkizgin@hotmail.com</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a asp-controller="Home" asp-action="index" class="nav-item nav-link">Anasayfa</a>
+                <a asp-controller="Home" asp-action="Content" class="nav-item nav-link">İletişim</a>
+                <a asp-controller="Home" asp-action="About" class="nav-item nav-link">İletişim</a>
+            </div>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Giriş Yap</button>
+        </form>
+        
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="card card-1">
+                        <div class="card-heading"></div>
+                        <div class="card-body">
+                            <h2 class="title">Giriş Yap</h2>
+                            <form method="POST">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="text" placeholder="Kullanıcı Adı" name="username">
+                                </div>
+                                <div class="input-group">
+                                    <input class="input--style-1" type="text" placeholder="Şifre" name="password">
+                                </div>
+                                <div class="p-t-20 text-right">
+                                    <button class="btn btn--radius btn-primary" type="submit">Giriş Yap</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
