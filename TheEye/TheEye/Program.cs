@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using TheEye.WebUL;
 
-namespace TheEye
+namespace TheEye.WebUL
 {
     public class Program
     {

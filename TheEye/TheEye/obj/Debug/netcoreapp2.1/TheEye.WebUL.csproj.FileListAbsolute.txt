@@ -29,3 +29,4 @@ C:\Users\ismet\Desktop\Smart-City-Reservation-System\TheEye\TheEye\obj\Debug\net
 C:\Users\ismet\Desktop\Smart-City-Reservation-System\TheEye\TheEye\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\ismet\Desktop\Smart-City-Reservation-System\TheEye\TheEye\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\ismet\Desktop\Smart-City-Reservation-System\TheEye\TheEye\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\ismet\Desktop\Smart-City-Reservation-System\TheEye\TheEye\obj\Debug\netcoreapp2.1\Razor\Views\PetrolStation\PetrolStation.cshtml.g.cs

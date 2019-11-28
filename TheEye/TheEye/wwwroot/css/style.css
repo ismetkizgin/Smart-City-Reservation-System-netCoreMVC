@@ -3,9 +3,15 @@
     color: #a9a9a9;
 }
 
-.navbar-link {
-    text-align: center;
+.card-img-top {
+    width: 100%;
 }
+
+.card-home {
+    margin-top: 50px;
+    top: 50px;
+}
+
 
 @media (min-width: 768px) {
     .align-md-left {
@@ -22,6 +28,14 @@
 
     .mobile-phone {
         display: none;
+    }
+    
+    .slider-size {
+        height: 30vw;
+    }
+
+    .card-img-top {
+        height: 15vw;
     }
 }
 
