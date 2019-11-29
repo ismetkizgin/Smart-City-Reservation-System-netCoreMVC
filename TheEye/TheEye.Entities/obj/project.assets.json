@@ -688,32 +688,40 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ismet\\.nuget\\packages\\": {},
+    "C:\\Users\\Alihan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj",
       "projectName": "TheEye.Entities",
       "projectPath": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj",
       "packagesPath": "C:\\Users\\ismet\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.Entities\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj",
+      "projectName": "TheEye.Entities",
+      "projectPath": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj",
+      "packagesPath": "C:\\Users\\Alihan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\TheEye\\TheEye.Entities\\obj\\",
+>>>>>>> 0fbceeb7980f6cf1ffad67ecdbc56aa4a19766a2
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ismet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+        "C:\\Users\\Alihan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\DevExpess\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

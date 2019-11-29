@@ -64,6 +64,7 @@ C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\TheEye\TheEye\obj
 C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\TheEye\TheEye\obj\Debug\netcoreapp2.1\TheEye.WebUL.csproj.CopyComplete
 C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\TheEye\TheEye\obj\Debug\netcoreapp2.1\Razor\Views\CarPark\CarPark.cshtml.g.cs
 C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\TheEye\TheEye\obj\Debug\netcoreapp2.1\Razor\Views\Pharmacy\Pharmacy.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\ismet\Downloads\Smart-City-Reservation-System-master(1)\Smart-City-Reservation-System-master\TheEye\TheEye\bin\Debug\netcoreapp2.1\bower.json
 C:\Users\ismet\Downloads\Smart-City-Reservation-System-master(1)\Smart-City-Reservation-System-master\TheEye\TheEye\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 C:\Users\ismet\Downloads\Smart-City-Reservation-System-master(1)\Smart-City-Reservation-System-master\TheEye\TheEye\bin\Debug\netcoreapp2.1\TheEye.WebUL.deps.json
@@ -98,3 +99,5 @@ C:\Users\ismet\Downloads\Smart-City-Reservation-System-master(1)\Smart-City-Rese
 C:\Users\ismet\Downloads\Smart-City-Reservation-System-master(1)\Smart-City-Reservation-System-master\TheEye\TheEye\obj\Debug\netcoreapp2.1\TheEye.WebUL.dll
 C:\Users\ismet\Downloads\Smart-City-Reservation-System-master(1)\Smart-City-Reservation-System-master\TheEye\TheEye\obj\Debug\netcoreapp2.1\TheEye.WebUL.pdb
 C:\Users\ismet\Downloads\Smart-City-Reservation-System-master(1)\Smart-City-Reservation-System-master\TheEye\TheEye\obj\Debug\netcoreapp2.1\TheEye.WebUL.csproj.CopyComplete
+=======
+>>>>>>> 0fbceeb7980f6cf1ffad67ecdbc56aa4a19766a2
