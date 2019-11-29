@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.DataAccess\\TheEye.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.DataAccess\\TheEye.DataAccess.csproj",
       "projectName": "TheEye.DataAccess",
-      "projectPath": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.DataAccess\\TheEye.DataAccess.csproj",
+      "projectPath": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.DataAccess\\TheEye.DataAccess.csproj",
       "packagesPath": "C:\\Users\\ismet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

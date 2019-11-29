@@ -128,9 +128,9 @@ h6 {
 }
 
 .btn--radius {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 
 .btn--green {

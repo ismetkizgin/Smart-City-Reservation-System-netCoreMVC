@@ -12538,11 +12538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye\\TheEye.WebUL.csproj",
+      "projectUniqueName": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye\\TheEye.WebUL.csproj",
       "projectName": "TheEye.WebUL",
-      "projectPath": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye\\TheEye.WebUL.csproj",
+      "projectPath": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye\\TheEye.WebUL.csproj",
       "packagesPath": "C:\\Users\\ismet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye\\obj\\",
+      "outputPath": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

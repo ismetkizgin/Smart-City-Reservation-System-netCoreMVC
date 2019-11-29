@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj": {}
+    "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj": {
+    "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj",
         "projectName": "TheEye.Entities",
-        "projectPath": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj",
+        "projectPath": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj",
         "packagesPath": "C:\\Users\\ismet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ismet\\Desktop\\Smart-City-Reservation-System\\TheEye\\TheEye.Entities\\obj\\",
+        "outputPath": "C:\\Users\\ismet\\Downloads\\Smart-City-Reservation-System-master(1)\\Smart-City-Reservation-System-master\\TheEye\\TheEye.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
