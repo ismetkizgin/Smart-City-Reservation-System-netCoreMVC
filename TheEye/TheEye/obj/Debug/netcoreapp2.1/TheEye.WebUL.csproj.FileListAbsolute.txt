@@ -109,3 +109,4 @@ C:\Users\ismet\Desktop\TheEye\TheEye\TheEye\bin\Debug\netcoreapp2.1\TheEye.Busin
 C:\Users\ismet\Desktop\TheEye\TheEye\TheEye\bin\Debug\netcoreapp2.1\TheEye.Core.pdb
 C:\Users\ismet\Desktop\TheEye\TheEye\TheEye\bin\Debug\netcoreapp2.1\TheEye.Entities.pdb
 C:\Users\ismet\Desktop\TheEye\TheEye\TheEye\bin\Debug\netcoreapp2.1\TheEye.DataAccess.pdb
+C:\Users\ismet\Desktop\TheEye\TheEye\TheEye\obj\Debug\netcoreapp2.1\Razor\Views\User\Index.cshtml.g.cs

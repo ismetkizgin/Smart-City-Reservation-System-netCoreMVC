@@ -9,6 +9,6 @@ namespace TheEye.DataAccess.Concrete.EntityFramwork
         {
             optionsBuilder.UseSqlServer(@"Data Source=.; Initial Catalog=TheEye; Integrated Security=True;");
         }
-        public DbSet<User> Users { get; set; }
+        public DbSet<User> User { get; set; }
     }
 }

@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using TheEye.Business.Abstract;
+using TheEye.Business.Concrete;
+using TheEye.DataAccess.Abstract;
+using TheEye.DataAccess.Concrete.EntityFramwork;
 
 namespace TheEye.WebUL
 {
@@ -10,6 +14,8 @@ namespace TheEye.WebUL
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IUserService, UserManeger>();
+            services.AddScoped<IUserDal, EfUserDal>();
             services.AddMvc();
         }
 
