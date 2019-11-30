@@ -56,3 +56,42 @@
         display: none;
     }
 }
+
+/*
+    Banner
+*/
+.breadcrumbs {
+    background: #475268;
+    color: #fff;
+    padding: 45px 0;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 3px 0 0;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/*
+    Footer
+*/
+footer {
+    background: #475268;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 50px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 300;
+}
+footer h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Fjalla One', sans-serif;
+}

@@ -4,6 +4,70 @@
     "C:\\Users\\ismet\\Desktop\\TheEye\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj": {}
   },
   "projects": {
+    "C:\\Users\\ismet\\Desktop\\TheEye\\TheEye\\TheEye.Core\\TheEye.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ismet\\Desktop\\TheEye\\TheEye\\TheEye.Core\\TheEye.Core.csproj",
+        "projectName": "TheEye.Core",
+        "projectPath": "C:\\Users\\ismet\\Desktop\\TheEye\\TheEye\\TheEye.Core\\TheEye.Core.csproj",
+        "packagesPath": "C:\\Users\\ismet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ismet\\Desktop\\TheEye\\TheEye\\TheEye.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ismet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\ismet\\Desktop\\TheEye\\TheEye\\TheEye.Entities\\TheEye.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +95,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ismet\\Desktop\\TheEye\\TheEye\\TheEye.Core\\TheEye.Core.csproj": {
+                "projectPath": "C:\\Users\\ismet\\Desktop\\TheEye\\TheEye\\TheEye.Core\\TheEye.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

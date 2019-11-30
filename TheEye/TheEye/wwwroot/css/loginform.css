@@ -188,7 +188,7 @@ input[type="date" i] {
 /* ==========================================================================
    #FORM
    ========================================================================== */
-input {
+.login-input {
   outline: none;
   margin: 0;
   border: none;
@@ -200,7 +200,7 @@ input {
   font-family: inherit;
 }
 
-.input-group {
+.login-input-group {
   position: relative;
   margin-bottom: 30px;
   border-bottom: 2px solid #ccc;

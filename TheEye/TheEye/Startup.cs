@@ -21,6 +21,7 @@ namespace TheEye.WebUL
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseMvcWithDefaultRoute();
             app.UseStatusCodePages();
             app.UseStaticFiles();
 
