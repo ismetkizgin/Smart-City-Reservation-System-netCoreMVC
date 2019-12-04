@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using TheEye.Business.Abstract;
 using TheEye.Business.Concrete;
 using TheEye.DataAccess.Abstract;
+using TheEye.DataAccess.Concrete.EntityFramework;
 using TheEye.DataAccess.Concrete.EntityFramwork;
 
 namespace TheEye.WebUL

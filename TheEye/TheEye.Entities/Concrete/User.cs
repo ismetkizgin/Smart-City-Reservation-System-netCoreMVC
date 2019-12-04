@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using TheEye.Core.Entities;
 
 namespace TheEye.Entities.Concrete
 {
-    public class User:IEntity
+    public class User : IEntity
     {
         public int UserId { get; set; }
         public string UserName { get; set; }
@@ -16,5 +17,6 @@ namespace TheEye.Entities.Concrete
         public string UserDistrict { get; set; }
         public string UserAdress { get; set; }
         public int UserType { get; set; }
+        public List<Ssn> Ssns =new List<Ssn>();
     }
 }

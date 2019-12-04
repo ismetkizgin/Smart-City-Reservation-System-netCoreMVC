@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using Microsoft.AspNetCore.Mvc;
 using TheEye.Business.Abstract;
 using TheEye.WebUL.Models;
 
@@ -14,7 +16,7 @@ namespace TheEye.WebUL.Controllers
         }
         public ActionResult Index()
         {
-            var users = _userService.GetAll();
+            var users = _userService.GetAll().Where(e => e.UserId == 1).ToList();
             UserListViewModel model = new UserListViewModel
             {
                 User = users

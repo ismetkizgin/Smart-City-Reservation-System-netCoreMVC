@@ -7,8 +7,9 @@ namespace TheEye.DataAccess.Concrete.EntityFramwork
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=.; Initial Catalog=TheEye; Integrated Security=True;");
+            optionsBuilder.UseSqlServer(@"Data Source=.; Initial Catalog=TheEyeDB; Integrated Security=True;");
         }
-        public DbSet<User> User { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Ssn> Ssn { get; set; }
     }
 }

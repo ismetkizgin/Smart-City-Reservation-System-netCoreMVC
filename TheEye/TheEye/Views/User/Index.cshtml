@@ -2,5 +2,9 @@
 
 @foreach (var x  in Model.User)
 {
-    <p>@x.UserName</p>
+    foreach (var y in x.Ssns)
+    {
+        <p>@y.UserId</p>
+
+    }
 }
