@@ -1,0 +1,15 @@
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\obj\Debug\netcoreapp3.1\TheEye.Business.AssemblyInfoInputs.cache
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\obj\Debug\netcoreapp3.1\TheEye.Business.AssemblyInfo.cs
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\bin\Debug\netcoreapp3.1\TheEye.Business.deps.json
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\bin\Debug\netcoreapp3.1\TheEye.Business.dll
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\bin\Debug\netcoreapp3.1\TheEye.Business.pdb
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\bin\Debug\netcoreapp3.1\TheEye.Core.dll
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\bin\Debug\netcoreapp3.1\TheEye.DataAccess.dll
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\bin\Debug\netcoreapp3.1\TheEye.Entities.dll
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\bin\Debug\netcoreapp3.1\TheEye.Core.pdb
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\bin\Debug\netcoreapp3.1\TheEye.DataAccess.pdb
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\bin\Debug\netcoreapp3.1\TheEye.Entities.pdb
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\obj\Debug\netcoreapp3.1\TheEye.Business.csprojAssemblyReference.cache
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\obj\Debug\netcoreapp3.1\TheEye.Business.csproj.CopyComplete
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\obj\Debug\netcoreapp3.1\TheEye.Business.dll
+C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Business\obj\Debug\netcoreapp3.1\TheEye.Business.pdb

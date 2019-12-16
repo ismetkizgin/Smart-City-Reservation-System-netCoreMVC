@@ -1,9 +1,0 @@
-﻿@model TheEye.WebUL.Models.UserListViewModel
-
-@foreach (var x  in Model.User)
-{
-        @foreach (var y in x.Ssns)
-        {
-            <p>@y.UserId</p>
-        }
-}

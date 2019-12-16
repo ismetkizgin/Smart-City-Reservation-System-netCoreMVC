@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "OTOPARK LİSTESİ";
+}
+
+@await Html.PartialAsync("MainSite/_Banner")
+<div class="container">
+    <br />
+    <div class="input-group mb-3">
+        <input id="input-text" type="text" class="form-control" placeholder="Arama Yap..." aria-label="Recipient's username" aria-describedby="button-addon2">
+
+    </div>
+    <div class="card mb-3" style="max-width: 1540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="~/images/carpark.jpg"
+                     class="card-img"
+                     height="100%"
+                     alt="..." />
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <div class="col-md-12">
+                        <table class="table">
+                            <thead>
+                            <th scope="col">Market</th>
+                            <th scope="col">Araç Yıkama</th>
+                            <th scope="col">Boş Park Yeri Sayısı</th>
+                            <th scope="col">Engelli Araç Parkı</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Var</td>
+                                    <td>Var</td>
+                                    <td>32</td>
+                                    <td>Var</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                    <button type="button" class="btn btn-primary btn-sm">
+                        Otopark Detayı
+                    </button>
+                    <br />
+                    <br />
+                    Doluluk Oranı
+                    <div class="progress">
+                        <div class="progress-bar bg-success"
+                             role="progressbar"
+                             style="width: 25%"
+                             aria-valuenow="25"
+                             aria-valuemin="0"
+                             aria-valuemax="100">
+                            25%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
