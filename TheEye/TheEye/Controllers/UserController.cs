@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Mvc;
 using TheEye.Business.Abstract;
 using TheEye.WebUL.Models;
