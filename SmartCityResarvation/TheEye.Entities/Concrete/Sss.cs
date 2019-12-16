@@ -1,6 +1,8 @@
-﻿namespace TheEye.Entities.Concrete
+﻿using TheEye.Core.Entities;
+
+namespace TheEye.Entities.Concrete
 {
-    public class Sss
+    public class Sss:IEntity
     {
         public int SssId { get; set; }
         public string SssQuestion { get; set; }

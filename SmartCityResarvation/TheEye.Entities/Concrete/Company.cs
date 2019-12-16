@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using TheEye.Core.Entities;
 
 namespace TheEye.Entities.Concrete
 {
-    public sealed class Company
+    public sealed class Company:IEntity
     {
         public int CompanyId { get; set; }
         public string CompanyName { get; set; }

@@ -9,3 +9,14 @@ C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Entities\obj\Debug\netcoreapp
 C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Entities\obj\Debug\netcoreapp3.1\TheEye.Entities.csproj.CopyComplete
 C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Entities\obj\Debug\netcoreapp3.1\TheEye.Entities.dll
 C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Entities\obj\Debug\netcoreapp3.1\TheEye.Entities.pdb
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\bin\Debug\netcoreapp3.1\TheEye.Entities.deps.json
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\bin\Debug\netcoreapp3.1\TheEye.Entities.dll
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\bin\Debug\netcoreapp3.1\TheEye.Entities.pdb
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\bin\Debug\netcoreapp3.1\TheEye.Core.dll
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\bin\Debug\netcoreapp3.1\TheEye.Core.pdb
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\obj\Debug\netcoreapp3.1\TheEye.Entities.csprojAssemblyReference.cache
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\obj\Debug\netcoreapp3.1\TheEye.Entities.AssemblyInfoInputs.cache
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\obj\Debug\netcoreapp3.1\TheEye.Entities.AssemblyInfo.cs
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\obj\Debug\netcoreapp3.1\TheEye.Entities.csproj.CopyComplete
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\obj\Debug\netcoreapp3.1\TheEye.Entities.dll
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Entities\obj\Debug\netcoreapp3.1\TheEye.Entities.pdb

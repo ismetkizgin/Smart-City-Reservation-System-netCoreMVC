@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ismet\\Desktop\\SmartCityResarvation\\TheEye.Core\\TheEye.Core.csproj": {}
+    "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\SmartCityResarvation\\TheEye.Core\\TheEye.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ismet\\Desktop\\SmartCityResarvation\\TheEye.Core\\TheEye.Core.csproj": {
+    "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\SmartCityResarvation\\TheEye.Core\\TheEye.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ismet\\Desktop\\SmartCityResarvation\\TheEye.Core\\TheEye.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\SmartCityResarvation\\TheEye.Core\\TheEye.Core.csproj",
         "projectName": "TheEye.Core",
-        "projectPath": "C:\\Users\\ismet\\Desktop\\SmartCityResarvation\\TheEye.Core\\TheEye.Core.csproj",
-        "packagesPath": "C:\\Users\\ismet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ismet\\Desktop\\SmartCityResarvation\\TheEye.Core\\obj\\",
+        "projectPath": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\SmartCityResarvation\\TheEye.Core\\TheEye.Core.csproj",
+        "packagesPath": "C:\\Users\\Alihan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alihan\\Documents\\GitHub\\Smart-City-Reservation-System\\SmartCityResarvation\\TheEye.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ismet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Users\\Alihan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\DevExpess\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

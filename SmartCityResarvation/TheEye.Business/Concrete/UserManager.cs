@@ -5,11 +5,11 @@ using TheEye.Entities.Concrete;
 
 namespace TheEye.Business.Concrete
 {
-    public class UserManeger : IUserService
+    public class UserManager : IUserService
     {
         private IUserDal _userDal;
 
-        public UserManeger(IUserDal userDal)
+        public UserManager(IUserDal userDal)
         {
             _userDal = userDal;
         }

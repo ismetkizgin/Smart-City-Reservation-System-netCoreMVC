@@ -1,8 +1,9 @@
 ﻿using System;
+using TheEye.Core.Entities;
 
 namespace TheEye.Entities.Concrete
 {
-    public class Request
+    public class Request:IEntity
     {
         public int RequestId { get; set; }
         public DateTime? RequestTime { get; set; }

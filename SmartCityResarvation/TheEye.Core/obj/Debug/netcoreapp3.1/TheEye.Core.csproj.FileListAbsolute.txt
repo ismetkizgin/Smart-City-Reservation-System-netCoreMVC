@@ -6,3 +6,11 @@ C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Core\bin\Debug\netcoreapp3.1\
 C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Core\bin\Debug\netcoreapp3.1\TheEye.Core.pdb
 C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Core\obj\Debug\netcoreapp3.1\TheEye.Core.dll
 C:\Users\ismet\Desktop\SmartCityResarvation\TheEye.Core\obj\Debug\netcoreapp3.1\TheEye.Core.pdb
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Core\bin\Debug\netcoreapp3.1\TheEye.Core.deps.json
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Core\bin\Debug\netcoreapp3.1\TheEye.Core.dll
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Core\bin\Debug\netcoreapp3.1\TheEye.Core.pdb
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Core\obj\Debug\netcoreapp3.1\TheEye.Core.csprojAssemblyReference.cache
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Core\obj\Debug\netcoreapp3.1\TheEye.Core.AssemblyInfoInputs.cache
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Core\obj\Debug\netcoreapp3.1\TheEye.Core.AssemblyInfo.cs
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Core\obj\Debug\netcoreapp3.1\TheEye.Core.dll
+C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.Core\obj\Debug\netcoreapp3.1\TheEye.Core.pdb

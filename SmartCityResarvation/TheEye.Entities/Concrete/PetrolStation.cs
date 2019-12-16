@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using TheEye.Core.Entities;
 
 namespace TheEye.Entities.Concrete
 {
-    public class PetrolStation
+    public class PetrolStation:IEntity
     {
         [Key]
         public int PetrolId { get; set; }
