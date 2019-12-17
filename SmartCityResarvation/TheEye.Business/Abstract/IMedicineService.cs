@@ -1,7 +1,9 @@
-﻿namespace TheEye.Business.Abstract
+﻿using TheEye.Entities.Concrete;
+
+namespace TheEye.Business.Abstract
 {
-    public interface IMedicineService
+    public interface IMedicineService : IServices<Medicine>
     {
-       
+        
     }
 }

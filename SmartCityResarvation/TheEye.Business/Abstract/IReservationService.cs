@@ -1,7 +1,8 @@
-﻿namespace TheEye.Business.Abstract
+﻿using TheEye.Entities.Concrete;
+
+namespace TheEye.Business.Abstract
 {
-    public interface IReservationService
+    public interface IReservationService : IServices<Reservation>
     {
-       
     }
 }
