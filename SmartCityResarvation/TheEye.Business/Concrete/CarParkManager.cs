@@ -1,35 +1,36 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TheEye.Business.Abstract;
+using TheEye.DataAccess.Abstract;
 using TheEye.Entities.Concrete;
 
 namespace TheEye.Business.Concrete
 {
     public class CarParkManager : ICarParkService
     {
-        public void Add(CarPark entity)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Delete(CarPark entity)
-        {
-            throw new System.NotImplementedException();
-        }
-
+        private ICarParkDal _carParkDal;
         public CarPark Get(int entityId)
         {
-            throw new System.NotImplementedException();
+            return _carParkDal.Get(x => x.CarParkId == entityId);
         }
 
         public List<CarPark> GetAll()
         {
-            throw new System.NotImplementedException();
+            return _carParkDal.GetList();
+        }
+
+        public void Add(CarPark entity)
+        {
+            _carParkDal.Add(entity);
+        }
+
+        public void Delete(CarPark entity)
+        {
+            _carParkDal.Delete(entity);
         }
 
         public void Update(CarPark entity)
         {
-            throw new System.NotImplementedException();
+            _carParkDal.Update(entity);
         }
     }
 }

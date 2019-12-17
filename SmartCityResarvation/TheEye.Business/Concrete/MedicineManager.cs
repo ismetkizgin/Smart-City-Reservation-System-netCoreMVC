@@ -1,34 +1,36 @@
 ﻿using System.Collections.Generic;
 using TheEye.Business.Abstract;
+using TheEye.DataAccess.Abstract;
 using TheEye.Entities.Concrete;
 
 namespace TheEye.Business.Concrete
 {
     public class MedicineManager : IMedicineService
     {
-        public void Add(Medicine entity)
+        private IMedicineDal _medicineDal;
+        public List<Medicine> GetAll()
         {
-            throw new System.NotImplementedException();
-        }
-
-        public void Delete(Medicine entity)
-        {
-            throw new System.NotImplementedException();
+            return _medicineDal.GetList();
         }
 
         public Medicine Get(int entityId)
         {
-            throw new System.NotImplementedException();
+            return _medicineDal.Get(x => x.MedicineId == entityId);
         }
 
-        public List<Medicine> GetAll()
+        public void Add(Medicine entity)
         {
-            throw new System.NotImplementedException();
+            _medicineDal.Add(entity);
+        }
+
+        public void Delete(Medicine entity)
+        {
+            _medicineDal.Delete(entity);
         }
 
         public void Update(Medicine entity)
         {
-            throw new System.NotImplementedException();
+            _medicineDal.Update(entity);
         }
     }
 }

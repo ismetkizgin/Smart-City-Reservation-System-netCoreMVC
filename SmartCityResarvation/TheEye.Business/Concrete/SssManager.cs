@@ -1,34 +1,35 @@
 ﻿using System.Collections.Generic;
 using TheEye.Business.Abstract;
+using TheEye.DataAccess.Abstract;
 using TheEye.Entities.Concrete;
 
 namespace TheEye.Business.Concrete
 {
     public class SssManager : ISssService
     {
-        public void Add(Sss entity)
+        private ISssDal _ıSssDal;
+        public List<Sss> GetAll()
         {
-            throw new System.NotImplementedException();
-        }
-
-        public void Delete(Sss entity)
-        {
-            throw new System.NotImplementedException();
+            return _ıSssDal.GetList();
         }
 
         public Sss Get(int entityId)
         {
-            throw new System.NotImplementedException();
+            return _ıSssDal.Get(x => x.SssId == entityId);
         }
 
-        public List<Sss> GetAll()
+        public void Add(Sss entity)
         {
-            throw new System.NotImplementedException();
+            _ıSssDal.Add(entity);
         }
 
+        public void Delete(Sss entity)
+        {
+            _ıSssDal.Delete(entity);
+        }
         public void Update(Sss entity)
         {
-            throw new System.NotImplementedException();
+            _ıSssDal.Update(entity);
         }
     }
 }

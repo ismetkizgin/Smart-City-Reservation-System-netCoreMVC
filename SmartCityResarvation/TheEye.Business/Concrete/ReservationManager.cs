@@ -1,34 +1,35 @@
 ﻿using System.Collections.Generic;
 using TheEye.Business.Abstract;
+using TheEye.DataAccess.Abstract;
 using TheEye.Entities.Concrete;
 
 namespace TheEye.Business.Concrete
 {
     public class ReservationManager : IReservationService
     {
+        private IReservationDal _reservationDal;
+        public List<Reservation> GetAll()
+        {
+            return _reservationDal.GetList();
+        }
+        public Reservation Get(int entityId)
+        {
+            return _reservationDal.Get();
+        }
+
         public void Add(Reservation entity)
         {
-            throw new System.NotImplementedException();
+            _reservationDal.Add(entity);
         }
 
         public void Delete(Reservation entity)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public Reservation Get(int entityId)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public List<Reservation> GetAll()
-        {
-            throw new System.NotImplementedException();
+            _reservationDal.Delete(entity);
         }
 
         public void Update(Reservation entity)
         {
-            throw new System.NotImplementedException();
+            _reservationDal.Update(entity);
         }
     }
 }

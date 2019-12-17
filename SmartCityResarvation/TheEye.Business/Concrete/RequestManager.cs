@@ -1,34 +1,36 @@
 ﻿using System.Collections.Generic;
 using TheEye.Business.Abstract;
+using TheEye.DataAccess.Abstract;
 using TheEye.Entities.Concrete;
 
 namespace TheEye.Business.Concrete
 {
     public class RequestManager : IRequestService
     {
-        public void Add(Request entity)
+        private IRequestDal _requestDal;
+        public List<Request> GetAll()
         {
-            throw new System.NotImplementedException();
-        }
-
-        public void Delete(Request entity)
-        {
-            throw new System.NotImplementedException();
+            return _requestDal.GetList();
         }
 
         public Request Get(int entityId)
         {
-            throw new System.NotImplementedException();
+            return _requestDal.Get(x => x.RequestId == entityId);
         }
 
-        public List<Request> GetAll()
+        public void Add(Request entity)
         {
-            throw new System.NotImplementedException();
+            _requestDal.Add(entity);
+        }
+
+        public void Delete(Request entity)
+        {
+            _requestDal.Delete(entity);
         }
 
         public void Update(Request entity)
         {
-            throw new System.NotImplementedException();
+            _requestDal.Update(entity);
         }
     }
 }

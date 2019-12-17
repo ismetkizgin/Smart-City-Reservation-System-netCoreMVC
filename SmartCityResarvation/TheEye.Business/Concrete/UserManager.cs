@@ -18,24 +18,24 @@ namespace TheEye.Business.Concrete
             return _userDal.GetList();
         }
 
-        public User Get(int userId)
+        public User Get(int entityId)
         {
-            return _userDal.Get(x => x.UserId == userId);
+            return _userDal.Get(x => x.UserId == entityId);
         }
 
-        public void Add(User user)
+        public void Add(User entity)
         {
-            _userDal.Add(user);
+            _userDal.Add(entity);
         }
 
-        public void Update(User user)
+        public void Update(User entity)
         {
-            _userDal.Update(user);
+            _userDal.Update(entity);
         }
 
-        public void Delete(User user)
+        public void Delete(User entity)
         {
-            _userDal.Delete(user);
+            _userDal.Delete(entity);
         }
     }
 }
