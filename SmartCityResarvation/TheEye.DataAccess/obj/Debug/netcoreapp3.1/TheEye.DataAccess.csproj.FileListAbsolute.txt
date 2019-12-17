@@ -24,3 +24,16 @@ C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvat
 C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.DataAccess\obj\Debug\netcoreapp3.1\TheEye.DataAccess.csproj.CopyComplete
 C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.DataAccess\obj\Debug\netcoreapp3.1\TheEye.DataAccess.dll
 C:\Users\Alihan\Documents\GitHub\Smart-City-Reservation-System\SmartCityResarvation\TheEye.DataAccess\obj\Debug\netcoreapp3.1\TheEye.DataAccess.pdb
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\bin\Debug\netcoreapp3.1\TheEye.DataAccess.deps.json
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\bin\Debug\netcoreapp3.1\TheEye.DataAccess.dll
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\bin\Debug\netcoreapp3.1\TheEye.DataAccess.pdb
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\bin\Debug\netcoreapp3.1\TheEye.Core.dll
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\bin\Debug\netcoreapp3.1\TheEye.Entities.dll
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\bin\Debug\netcoreapp3.1\TheEye.Core.pdb
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\bin\Debug\netcoreapp3.1\TheEye.Entities.pdb
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\obj\Debug\netcoreapp3.1\TheEye.DataAccess.csprojAssemblyReference.cache
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\obj\Debug\netcoreapp3.1\TheEye.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\obj\Debug\netcoreapp3.1\TheEye.DataAccess.AssemblyInfo.cs
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\obj\Debug\netcoreapp3.1\TheEye.DataAccess.csproj.CopyComplete
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\obj\Debug\netcoreapp3.1\TheEye.DataAccess.dll
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye.DataAccess\obj\Debug\netcoreapp3.1\TheEye.DataAccess.pdb
