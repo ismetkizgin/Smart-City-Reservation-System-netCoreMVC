@@ -8,9 +8,14 @@ namespace TheEye.Business.Concrete
     public class MedicineManager : IMedicineService
     {
         private IMedicineDal _medicineDal;
+        public MedicineManager(IMedicineDal medicineDal)
+        {
+            _medicineDal = medicineDal;
+        }
+
         public List<Medicine> GetAll()
         {
-            return _medicineDal.GetList();
+            return _medicineDal.GetIncludeList("Company");
         }
 
         public Medicine Get(int entityId)

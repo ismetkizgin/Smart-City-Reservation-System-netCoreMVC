@@ -14,11 +14,11 @@ namespace TheEye.Entities.Concrete
         public string CompanyCity { get; set; }
         public string CompanyDistrict { get; set; }
         public DateTime? CompanyTime { get; set; }
-        public string CompanyType { get; set; }
+        public int CompanyType { get; set; }
 
-        public ICollection<CarPark> CarParks { get; set; }
-        public ICollection<Medicine> Medicines { get; set; }
-        public ICollection<PetrolStation> PetrolStations { get; set; }
+        public CarPark CarPark { get; set; }
+        public Medicine Medicines { get; set; }
+        public PetrolStation PetrolStations { get; set; }
         public ICollection<Ssn> Ssn { get; set; }
     }
 }

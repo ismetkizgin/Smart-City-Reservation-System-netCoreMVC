@@ -17,6 +17,7 @@ namespace TheEye.Entities.Concrete
         public string UserDistrict { get; set; }
         public string UserAdress { get; set; }
         public int? UserType { get; set; }
+        public string Token { get; set; }
 
         public ICollection<Request> Requests { get; set; }
         public ICollection<Reservation> Reservations { get; set; }

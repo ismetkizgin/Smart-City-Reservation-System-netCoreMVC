@@ -9,7 +9,6 @@ namespace TheEye.MvcWebUl.Controllers
             ViewBag.Layout = true;
         }
 
-        [Route("Admin")]
         public ActionResult Index()
         {
             return View();

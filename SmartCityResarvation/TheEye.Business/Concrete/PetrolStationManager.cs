@@ -8,9 +8,14 @@ namespace TheEye.Business.Concrete
     public class PetrolStationManager : IPetrolStationService
     {
         private IPetrolStationDal _petrolStationDal;
+        public PetrolStationManager(IPetrolStationDal petrolStationDal)
+        {
+            _petrolStationDal = petrolStationDal;
+        }
+
         public List<PetrolStation> GetAll()
         {
-            return _petrolStationDal.GetList();
+            return _petrolStationDal.GetIncludeList("Company");
         }
         public PetrolStation Get(int entityId)
         {

@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -13,6 +12,7 @@
     <link href="~/css/loginform.css" rel="stylesheet" />
     <link href="~/lib/fontawesome/css/all.min.css" rel="stylesheet" />
 
+
 </head>
 <body>
 
@@ -25,5 +25,13 @@
     <script src="~/js/loginform.js"></script>
     <script src="~/js/search.js"></script>
 
+    @if (TempData["stateLogin"] != null)
+    {
+        <script>
+            $(document).ready(function () {
+                $("#loginModal").modal('show');
+            });
+        </script>
+    }
 </body>
 </html>

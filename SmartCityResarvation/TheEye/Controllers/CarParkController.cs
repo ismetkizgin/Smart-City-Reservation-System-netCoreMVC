@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using TheEye.Business.Abstract;
 using TheEye.Entities.Concrete;
 
@@ -16,8 +16,8 @@ namespace TheEye.WebUL.Controllers
         [Route("Otopark")]
         public ActionResult CarPark()
         {
-            List<CarPark> carPark = _carParkService.GetAll();
-            return View(carPark);
+            List<CarPark> list = _carParkService.GetAll();
+            return View(list);
         }
     }
 }

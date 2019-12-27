@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheEye.WebUl", "TheEye\TheEye.WebUl.csproj", "{FE3483B1-74E9-465D-A98E-3E125056ECD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheEye.WebUl", "TheEye\TheEye.WebUl.csproj", "{FE3483B1-74E9-465D-A98E-3E125056ECD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheEye.Business", "TheEye.Business\TheEye.Business.csproj", "{5023E65A-065E-401C-9E2F-5C588B89C16A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheEye.Business", "TheEye.Business\TheEye.Business.csproj", "{5023E65A-065E-401C-9E2F-5C588B89C16A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheEye.Core", "TheEye.Core\TheEye.Core.csproj", "{7B60AEB4-F5F0-41DA-BEE6-61F802150F35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheEye.Core", "TheEye.Core\TheEye.Core.csproj", "{7B60AEB4-F5F0-41DA-BEE6-61F802150F35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheEye.DataAccess", "TheEye.DataAccess\TheEye.DataAccess.csproj", "{9BB0A273-2BA4-4916-B8BA-E947FF64EA08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheEye.DataAccess", "TheEye.DataAccess\TheEye.DataAccess.csproj", "{9BB0A273-2BA4-4916-B8BA-E947FF64EA08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheEye.Entities", "TheEye.Entities\TheEye.Entities.csproj", "{7F5B0637-069D-4850-8F79-4C637FB8A1B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheEye.Entities", "TheEye.Entities\TheEye.Entities.csproj", "{7F5B0637-069D-4850-8F79-4C637FB8A1B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

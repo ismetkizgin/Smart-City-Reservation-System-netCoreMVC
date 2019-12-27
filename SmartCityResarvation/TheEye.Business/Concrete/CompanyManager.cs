@@ -8,6 +8,11 @@ namespace TheEye.Business.Concrete
     public class CompanyManager : ICompanyService
     {
         private ICompanyDal _companyDal;
+        public CompanyManager(ICompanyDal companyDal)
+        {
+            _companyDal = companyDal;
+        }
+
         public Company Get(int entityId)
         {
             return _companyDal.Get(x => x.CompanyId == entityId);

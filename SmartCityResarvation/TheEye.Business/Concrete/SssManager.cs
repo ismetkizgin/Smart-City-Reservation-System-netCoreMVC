@@ -8,6 +8,11 @@ namespace TheEye.Business.Concrete
     public class SssManager : ISssService
     {
         private ISssDal _ıSssDal;
+        public SssManager(ISssDal ıSssDal)
+        {
+            _ıSssDal = ıSssDal;
+        }
+
         public List<Sss> GetAll()
         {
             return _ıSssDal.GetList();

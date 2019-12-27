@@ -8,6 +8,11 @@ namespace TheEye.Business.Concrete
     public class SsnManager : ISsnService
     {
         private ISsnDal _ssnDal;
+        public SsnManager(ISsnDal ssnDal)
+        {
+            _ssnDal = ssnDal;
+        }
+
         public List<Ssn> GetAll()
         {
             return _ssnDal.GetList();

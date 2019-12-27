@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore.Metadata;
 using TheEye.Core.Entities;
 
 namespace TheEye.Core.DataAccess
@@ -9,6 +11,7 @@ namespace TheEye.Core.DataAccess
     {
         T Get(Expression<Func<T, bool>> filter = null);
         List<T> GetList(Expression<Func<T, bool>> filter = null);
+        List<T> GetIncludeList(string entityName);
         void Add(T entity);
         void Update(T entity);
         void Delete(T entity);

@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using Microsoft.EntityFrameworkCore;
 using TheEye.Core.Entities;
 
 namespace TheEye.Core.DataAccess.EntityFramework
@@ -45,6 +45,12 @@ namespace TheEye.Core.DataAccess.EntityFramework
                 deletedEntity.State = EntityState.Deleted;
                 context.SaveChanges();
             }
+        }
+
+        public List<TEntity> GetIncludeList(string entityName)
+        {
+            using (var context = new TContext())
+                return context.Set<TEntity>().Include(entityName).ToList();
         }
     }
 }

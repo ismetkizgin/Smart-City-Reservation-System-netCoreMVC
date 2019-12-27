@@ -8,6 +8,11 @@ namespace TheEye.Business.Concrete
     public class RequestManager : IRequestService
     {
         private IRequestDal _requestDal;
+        public RequestManager(IRequestDal requestDal)
+        {
+            _requestDal = requestDal;
+        }
+
         public List<Request> GetAll()
         {
             return _requestDal.GetList();

@@ -8,6 +8,10 @@ namespace TheEye.Business.Concrete
     public class CarParkManager : ICarParkService
     {
         private ICarParkDal _carParkDal;
+        public CarParkManager(ICarParkDal carParkDal)
+        {
+            _carParkDal = carParkDal;
+        }
         public CarPark Get(int entityId)
         {
             return _carParkDal.Get(x => x.CarParkId == entityId);
@@ -15,7 +19,7 @@ namespace TheEye.Business.Concrete
 
         public List<CarPark> GetAll()
         {
-            return _carParkDal.GetList();
+            return _carParkDal.GetIncludeList("Company");
         }
 
         public void Add(CarPark entity)

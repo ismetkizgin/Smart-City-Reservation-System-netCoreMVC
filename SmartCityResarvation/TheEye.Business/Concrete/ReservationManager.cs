@@ -8,6 +8,11 @@ namespace TheEye.Business.Concrete
     public class ReservationManager : IReservationService
     {
         private IReservationDal _reservationDal;
+        public ReservationManager(IReservationDal reservationDal)
+        {
+            _reservationDal = reservationDal;
+        }
+
         public List<Reservation> GetAll()
         {
             return _reservationDal.GetList();
