@@ -1,0 +1,50 @@
+﻿@model TheEye.Entities.Concrete.PetrolStation
+
+@{
+    ViewBag.Title = "title";
+    Layout = "AdminSite/_AdminLayout";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="forms-main">
+                <div class="graph-form">
+                    <div class="validation-form">
+                        <form asp-controller="PetrolStation" asp-action="PetrolStationOparationCrud" method="post">
+                            <h2 class="inner-tittle">Petrol İstasyonu Ekleme</h2>
+                            <div class="vali-form">
+                                <div class="col-md-12 form-group1">
+                                    <label class="control-label">Petrol İstasyonu Adı:</label>
+                                    <input type="text" placeholder="Petrol İstasyonu Adı" required="">
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                            <div class="vali-form">
+                                <div class="col-md-6 form-group1">
+                                    <label asp-for="PetrolTire" class="control-label">Petrol İstasyonunda Araç Lastik Değiştirme Var mı?:</label>
+                                    <input asp-for="PetrolTire" type="text" placeholder="" required name="PetrolTire">
+                                </div>
+                                <div class="col-md-6 form-group1">
+                                    <label asp-for="PetrolMarkets" class="control-label">Petrol İstasyonunda Market Var mı?:</label>
+                                    <input asp-for="PetrolMarkets" type="text" placeholder="" required name="PetrolMarkets">
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="col-md-12 form-group1 ">
+                                <label asp-for="PetrolWashing" class="control-label">Petrol İstasyonunda Araç Yıkama Var mı?:</label>
+                                <textarea asp-for="PetrolWashing" placeholder="" required name="PetrolWashing"></textarea>
+                            </div>
+                            <div class="col-md-8 form-group button-2 text-right">
+                                <button type="submit" class="btn btn-primary" value="AddPetrolStation">Kaydet</button>
+                                <button type="reset" class="btn btn-default">Sıfırla</button>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+﻿@model System.Collections.Generic.List<TheEye.Entities.Concrete.PetrolStation>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "AdminSite/_AdminLayout";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="inner-tittle two">Petrol İstasyonu İçerik Listesi</h3>
+            <div class="graph">
+                <div class="tables">
+                    <table class="table table-hover text-center">
+                        <thead>
+                            <tr>
+                                <th class="text-center">#</th>
+                                <th class="text-center">Petrol Marketi</th>
+                                <th class="text-center">Petrol Yıkama</th>
+                                <th class="text-center">Petrol Tekerlek</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th scope="row">@item.PetrolId</th>
+                                    <td>@item.PetrolMarkets </td>
+                                    <td>@item.PetrolWashing</td>
+                                    <td>@item.PetrolTire</td>
+                                    <td>
+                                        <a class="btn btn-success" asp-controller="PetrolStation" asp-action="Update" asp-route-id="@item.PetrolId">Güncelle</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-danger" asp-controller="PetrolStation" asp-action="DeletePetrolStation" asp-route-id="@item.PetrolId">Sil</a>
+                                    </td>
+                                </tr>
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

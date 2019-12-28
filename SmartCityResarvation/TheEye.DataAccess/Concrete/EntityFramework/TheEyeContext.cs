@@ -14,8 +14,15 @@ namespace TheEye.DataAccess.Concrete.EntityFramework
         public DbSet<Ssn> Ssn { get; set; }
         public DbSet<Sss> Sss { get; set; }
         public DbSet<User> Users { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<CarPark>()
+                .HasOne(a => a.Company)
+                .WithOne(b => b.CarPark);
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseLazyLoadingProxies();
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(@"Data Source=.; Initial Catalog=TheEyeDB; Integrated Security=True;");

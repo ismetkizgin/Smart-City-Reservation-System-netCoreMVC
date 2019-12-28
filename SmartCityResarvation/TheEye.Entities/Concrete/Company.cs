@@ -4,7 +4,7 @@ using TheEye.Core.Entities;
 
 namespace TheEye.Entities.Concrete
 {
-    public sealed class Company:IEntity
+    public class Company:IEntity
     {
         public int CompanyId { get; set; }
         public string CompanyName { get; set; }
@@ -16,9 +16,9 @@ namespace TheEye.Entities.Concrete
         public DateTime? CompanyTime { get; set; }
         public int CompanyType { get; set; }
 
-        public CarPark CarPark { get; set; }
-        public Medicine Medicines { get; set; }
-        public PetrolStation PetrolStations { get; set; }
-        public ICollection<Ssn> Ssn { get; set; }
+        public virtual CarPark CarPark { get; set; }
+        public virtual Medicine Medicines { get; set; }
+        public virtual PetrolStation PetrolStations { get; set; }
+        public virtual ICollection<Ssn> Ssn { get; set; }
     }
 }

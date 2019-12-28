@@ -31,6 +31,8 @@ namespace TheEye.WebUl
             services.AddScoped<IUserDal, EfUserDal>();
             services.AddScoped<IPetrolStationService, PetrolStationManager>();
             services.AddScoped<IPetrolStationDal, EfPetrolStationDal>();
+            services.AddScoped<IMedicineService, MedicineManager>();
+            services.AddScoped<IMedicineDal, EfMedicineDal>();
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             services.AddScoped<LoginFilter>();

@@ -3,7 +3,7 @@ using TheEye.Core.Entities;
 
 namespace TheEye.Entities.Concrete
 {
-    public sealed class Medicine:IEntity
+    public class Medicine:IEntity
     {
         public int MedicineId { get; set; }
         public string MedicineName { get; set; }
@@ -12,7 +12,7 @@ namespace TheEye.Entities.Concrete
         public string MedicinePiece { get; set; }
         public int? CompanyId { get; set; }
 
-        public Company Company { get; set; }
-        public ICollection<Request> Requests { get; set; }
+        public virtual Company Company { get; set; }
+        public virtual ICollection<Request> Requests { get; set; }
     }
 }

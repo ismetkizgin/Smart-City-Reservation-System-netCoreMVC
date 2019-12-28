@@ -46,8 +46,8 @@
             <header class="logo">
                 <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="#">
                     <span id="logo"><h1>Eye On</h1></span>
-    <!--<img id="logo" src="" alt="Logo"/>-->
-</a>
+                    <!--<img id="logo" src="" alt="Logo"/>-->
+                </a>
             </header>
             <div class="down">
                 <a href="#"><img src="images/admin.jpg"></a>
@@ -71,6 +71,34 @@
 
                         </ul>
                     </li>
+                    <li id="menu-academico">
+                        <a href="#"><i class="fas fa-car"></i> <span>Otopark</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                        <ul id="menu-academico-sub">
+                            <li><a asp-controller="CarPark" asp-action="AddCarPark"> Otopark Ekle &amp; Sil</a></li>
+                            <li><a asp-controller="CarPark" asp-action="CarParkGetList">Otopark Listele</a></li>
+                            <li><a href="#">Otopark Güncelle</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-academico">
+                        <a href="#"><i class="fas fa-gas-pump"></i> <span> Petrol İstasyonu</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                        <ul id="menu-academico-sub">
+                            <li><a asp-controller="PetrolStation" asp-action="AddPetrolStation"> Petrol İstasyonu Ekle &amp; Sil</a></li>
+                            <li><a asp-controller="PetrolStation" asp-action="PetrolStationGetList">Petrol İstasyonu Listele</a></li>
+                            <li><a asp-controller="PetrolStation" asp-action="PetrolStationGetList">Petrol İstasyonu Güncelle</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-academico">
+                        <a href="#"><i class="fas fa-prescription-bottle-alt"></i> <span> Eczane</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                        <ul id="menu-academico-sub">
+                            <li><a>Eczane Ekle &amp; Sil</a></li>
+                            <li><a href="#">Eczane Listele </a></li>
+                            <li><a href="#">Eczane Güncelle</a></li>
+                            <li><a asp-controller="Pharmacy" asp-action="AddPharmacy">Eczane'ye İlaç Ekle</a></li>
+                            <li><a asp-controller="Pharmacy" asp-action="DeletePharmacy">Eczane'den İlaç Sil </a></li>
+                            <li><a asp-controller="Pharmacy" asp-action="PharmacyGetList">Eczane'den İlaç Güncelle </a></li>
+                        </ul>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -80,6 +108,6 @@
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-    
+
 </body>
 </html>
