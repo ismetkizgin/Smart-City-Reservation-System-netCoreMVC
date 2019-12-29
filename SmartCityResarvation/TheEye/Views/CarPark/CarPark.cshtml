@@ -34,32 +34,58 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Var</td>
-                                        
-                                        <td>@item.CarParkWashing</td>
-                                        <td>32</td>
-                                        <td>Var</td>
+                                        @if (item.CarParkMarket)
+                                        {
+                                            <td>Var</td>
+                                        }
+                                        else
+                                        {
+                                            <td>Yok</td>
+                                        }
+
+                                        @if (item.CarParkWashing)
+                                        {
+                                            <td>Var</td>
+                                        }
+                                        else
+                                        {
+                                            <td>Yok</td>
+                                        }
+                                        <td>@item.CarParkMax</td>
+                                        @if (item.CarParkDisabled)
+                                        {
+                                            <td>Var</td>
+                                        }
+                                        else
+                                        {
+                                            <td>Yok</td>
+                                        }
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p class="card-text">
+                        @*<p class="card-text">
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </p>
                         <button type="button" class="btn btn-primary btn-sm">
                             Otopark Detayı
-                        </button>
+                        </button>*@
                         <br />
                         <br />
+                        @{
+                            var max = item.CarParkMax;
+                            var nul = item.CarParkNull;
+                            var yuzde = nul * 100 / max;
+                        }
                         Doluluk Oranı
                         <div class="progress">
                             <div class="progress-bar bg-success"
                                  role="progressbar"
-                                 style="width: 25%"
-                                 aria-valuenow="25"
+                                 style="width: @yuzde%"
+                                 aria-valuenow="@yuzde"
                                  aria-valuemin="0"
                                  aria-valuemax="100">
-                                25%
+                                @yuzde%
                             </div>
                         </div>
                     </div>

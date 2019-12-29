@@ -297,3 +297,4 @@ C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Pharmacy\PharmacyOparation.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Shared\MainSite\_Login.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\AccountViewCompanent\Default.cshtml.g.cs
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Pharmacy\Medicine.cshtml.g.cs

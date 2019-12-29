@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">@item.Company.CompanyName</h5>
                         <div class="col-md-12">
                             <table class="table">
                                 <thead>
@@ -28,39 +28,50 @@
                                         <th scope="col">Bulunan Akaryakıt Türleri</th>
                                         <th scope="col">Market</th>
                                         <th scope="col">Araç Yıkama</th>
-                                        <th scope="col">Araç Lastiği</th>
+                                        <th scope="col">Araç Lastik Bakımı</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>@item.PetrolFuelType</td>
-                                        <td>@item.PetrolMarkets</td>
-                                        <td>@item.PetrolWashing</td>
-                                        <td>@item.PetrolTire</td>
-                                        
+
+                                        @if (item.PetrolMarkets)
+                                        {
+                                            <td>Var</td>
+                                        }
+                                        else
+                                        {
+                                            <td>Yok</td>
+                                        }
+                                        @if (item.PetrolWashing)
+                                        {
+                                            <td>Var</td>
+                                        }
+                                        else
+                                        {
+                                            <td>Yok</td>
+                                        }
+                                        @if (item.PetrolTire)
+                                        {
+                                            <td>Var</td>
+                                        }
+                                        else
+                                        {
+                                            <td>Yok</td>
+                                        }
+
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
-                        <button type="button" class="btn btn-primary btn-sm">
-                            Petrol İstasyonu Detayı
-                        </button>
-                        <br/>
-                        <br/>
-                        Doluluk Oranı
-                        <div class="progress">
-                            <div class="progress-bar bg-success"
-                                 role="progressbar"
-                                 style="width: 25%"
-                                 aria-valuenow="25"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100">
-                                25%
-                            </div>
-                        </div>
+                        @*<p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+        <button type="button" class="btn btn-primary btn-sm">
+            Petrol İstasyonu Detayı
+        </button>*@
+                        <br />
+                        <br />
                     </div>
                 </div>
             </div>

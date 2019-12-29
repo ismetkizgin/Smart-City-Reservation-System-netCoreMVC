@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Threading.Tasks;
 using TheEye.Business.Abstract;
 using TheEye.Entities.Concrete;
 using TheEye.WebUl.Models;
