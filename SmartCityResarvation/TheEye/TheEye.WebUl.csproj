@@ -438,4 +438,8 @@
     <ProjectReference Include="..\TheEye.Entities\TheEye.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Medicine\" />
+  </ItemGroup>
+
 </Project>

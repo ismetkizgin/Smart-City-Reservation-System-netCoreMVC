@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Filters;
+using System;
 using TheEye.WebUl.Atributes;
-using TheEye.WebUL.Controllers;
 
 namespace TheEye.WebUl.Filters
 {
@@ -12,13 +12,13 @@ namespace TheEye.WebUl.Filters
         {
             string actionName = (string)context.RouteData.Values["action"];
             string controllerName = (string)context.RouteData.Values["controller"];
-            var controller = (HomeController)context.Controller;
+            var controller = (Controller)context.Controller;
 
             if (HasIgnoreAttribute(context)) { return; }
             context.HttpContext.Session.TryGetValue("token", out var result);
             if (result == null)
             {
-                context.Result = controller.RedirectToAction("Index", "Home");
+                context.Result = controller.RedirectToAction("Login", "Account");
             }
             else
             {

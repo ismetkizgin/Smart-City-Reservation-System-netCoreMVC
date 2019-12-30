@@ -1,0 +1,76 @@
+﻿@model TheEye.WebUl.Models.CompanyViewModal
+
+@{
+    ViewBag.Title = "title";
+    Layout = "AdminSite/_AdminLayout";
+}
+
+<div class="card-header">
+    <h5 class="title">Firma Katılım İsteği</h5>
+</div>
+<div class="card-body">
+    <form asp-controller="Company" asp-action="CompanyControlAdd" method="post">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="CompanyName">Firma Adı:</label>
+                    <input asp-for="CompanyName" type="text" class="form-control" placeholder="Firma Adı" name="CompanyName">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CompanyMail">Firma Mail Adresi:</label>
+                    <input asp-for="CompanyMail" type="text" class="form-control" placeholder="Firma Mail Adresi" value=""
+                           required="" name="CompanyMail">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CompanyTaxNo">Firma Vergi Numarası:</label>
+                    <input asp-for="CompanyTaxNo" type="text" class="form-control" placeholder="Firma Vergi Numarası" name="CompanyTaxNo">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="CompanyAdress">Firma Adresi:</label>
+                    <input asp-for="CompanyAdress" type="text" class="form-control" placeholder="Firma Adresi" name="CompanyAdress"
+                           required="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="CompanyCity">Şehir:</label>
+                    <input asp-for="CompanyCity" type="text" class="form-control" placeholder="Şehir" name="CompanyCity"
+                           required="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="CompanyDistrict">Bölge:</label>
+                    <input asp-for="CompanyDistrict" type="text" class="form-control" placeholder="Bölge" name="CompanyDistrict"
+                           required="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="CompanyTime">Kapanış Saati:</label>
+                    <input asp-for="CompanyTime" type="text" class="form-control" placeholder="Kapanış Saati" name="CompanyTime"
+                           required="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block" value="CompanyOparationCrud"> Katılım İsteği Gönder </button>
+            </div>
+        </div>
+    </form>
+</div>

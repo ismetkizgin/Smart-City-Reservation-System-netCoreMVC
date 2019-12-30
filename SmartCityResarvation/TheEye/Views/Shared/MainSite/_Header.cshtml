@@ -29,49 +29,13 @@
                 <div class="navbar-nav">
                     <a asp-controller="Home" asp-action="index" class="nav-item nav-link">Anasayfa</a>
                     <a asp-controller="Home" asp-action="Content" class="nav-item nav-link">İletişim</a>
-                    <a asp-controller="Home" asp-action="About" class="nav-item nav-link">İletişim</a>
+                    <a asp-controller="Home" asp-action="About" class="nav-item nav-link">Hakkımızda</a>
                 </div>
             </div>
-
-            @*@await Component.InvokeAsync("AccountViewCompanent")*@
-            @* @await Html.PartialAsync("../Account/Login")*@
-
-            @*<form class="form-inline my-2 my-lg-0">
-                <button type="button" class="btn btn-success btn--radius" data-toggle="modal" data-target=".bd-example-modal-lg">Giriş Yap</button>
+            <form class="form-inline my-2 my-lg-0" method="post">
+                <a  asp-controller="Account" asp-action="Login" type="button" class="btn btn-success btn-round btn-ouutline-success">Giriş Yap</a>
             </form>
-
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="card card-1">
-                            <div class="card-heading"></div>
-                            <div class="card-body">
-                                <h2 class="title">Giriş Yap</h2>
-                                <form method="POST">
-                                    <div class="login-input-group">
-                                        <input class="input--style-1 login-input" type="text" placeholder="Kullanıcı Adı" name="username">
-                                    </div>
-                                    <div class="login-input-group">
-                                        <input class="input--style-1 login-input" type="text" placeholder="Şifre" name="password">
-                                    </div>
-                                    <div class="row">
-                                        <div class="p-t-20 text-left col-md-6">
-                                            <p class="text-muted">
-                                               <a href="#" class="text-reset">Şifremi Unuttum</a>.
-                                            </p>
-                                        </div>
-                                        <div class="p-t-20 text-right col-md-6">
-                                            <a href="#" class="card-link text-left pr-5">Kayıt Ol</a>
-                                            <button class="btn btn--radius btn-success" type="submit">Giriş Yap</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>*@
-
         </div>
     </nav>
+
 </header>

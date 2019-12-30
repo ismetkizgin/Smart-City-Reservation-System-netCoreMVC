@@ -1,59 +1,49 @@
-﻿@model System.Collections.Generic.List<TheEye.Entities.Concrete.Medicine>
-
+﻿@model System.Collections.Generic.List<TheEye.Entities.Concrete.Company>
 @{
     ViewBag.Title = "title";
     Layout = "AdminSite/_AdminLayout";
 }
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h3 class="inner-tittle two">İlaç Listesi</h3>
-            <div class="graph">
-                @*@if (TempData["Message"] != null)
-                    {
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            @TempData["Message"]
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    }*@
-                <div class="tables">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>İlaç Adı</th>
-                                <th>İlaç Parçası</th>
-                                <th>İlaç Tipi</th>
-                                <th>İlaç Reçetesi</th>
-                                <th>Güncelle</th>
-                                <th>Sil</th>
-                            </tr>
-                        </thead>
+<div class="card-header">
+    <h4 class="card-title">Eczane Listesi</h4>
+</div>
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="text-primary">
+                <tr>
+                    <th>Eczane Adı</th>
+                    <th>Eczane Telefon Numarası</th>
+                    <th>Eczane Mail Adresi</th>
+                    <th>Şehir</th>
+                    <th>Bölge</th>
+                    <th>Kapanış Saati</th>
+                    <th>Eczane Adresi</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
 
-                        <tbody>
-                            @foreach (var item in Model)
-                            {
-                                <tr>
-                                    <th scope="row">@item.MedicineId</th>
-                                    <td>@item.MedicineName</td>
-                                    <td>@item.MedicinePiece</td>
-                                    <td>@item.MedicineType</td>
-                                    <td>@item.MedicinePrescription</td>
-                                    <td>
-                                        <a class="btn btn-success" asp-controller="Pharmacy" asp-action="Update" asp-route-id="@item.MedicineId">Güncelle</a>
-                                    </td>
-                                    <td>
-                                        <a class="btn btn-danger" asp-controller="Pharmacy" asp-action="DeletePharmacy" asp-route-id="@item.MedicineId">Sil</a>
-                                    </td>
-                                </tr>
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CompanyName</td>
+                        <td>@item.CompanyPhone</td>
+                        <td>@item.CompanyMail</td>
+                        <td>@item.CompanyCity</td>
+                        <td>@item.CompanyDistrict</td>
+                        <td>@item.CompanyTime</td>
+                        <td>@item.CompanyAdress</td>
+                        <td>
+                            <a asp-controller="Company" asp-action="CompanyUpdate" asp-route-id="@item.CompanyId" class="btn btn-success">Firma Bilgi Güncelle</a>
+                        </td>
+                        <td>
+                            <a asp-controller="Company" asp-action="CompanyDelete" asp-route-id="@item.CompanyId" class="btn btn-danger text-light">Sil </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>

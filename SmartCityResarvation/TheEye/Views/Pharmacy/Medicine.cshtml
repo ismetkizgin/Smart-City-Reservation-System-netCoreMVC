@@ -1,62 +1,80 @@
 ﻿@model List<TheEye.Entities.Concrete.Medicine>
-<div class="container">
-    <br/>
-    <div class="input-group mb-3">
-        <input id="input-text" type="text" class="form-control" placeholder="Arama Yap..." aria-label="Recipient's username" aria-describedby="button-addon2">
-    </div>
-    @foreach(var item in Model) { 
-        <div class="card mb-3" style="max-width: 1540px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="~/images/Pharmacist.jpg"
-                         class="card-img"
-                         height="100%"
-                         alt="..." />
-                </div>
-                <div class="col-md-8">
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title"> İlaç Güncelleme </h4>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">@item.MedicineName</h5>
-                        <div class="col-md-12">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">İlaç Reçetesi</th>
-                                        <th scope="col">İlaç Tipi</th>
-                                        <th scope="col"></th>
-                                        <th scope="col">İlaç Parçası</th>
-                                    </tr>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="text-primary">
+                                <th>İlaç Adı</th>
+                                <th>İlaç Parçası</th>
+                                <th>İlaç Tipi</th>
+                                <th>İlaç Reçetesi</th>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>@item.MedicinePrescription</td>
-                                        <td>@item.MedicineType</td>
-                                        <td>@item.MedicinePiece</td>
-                                    </tr>
-                                </tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tbody>
+                                        <tr>
+                                            <td>@item.MedicineName</td>
+                                            <td>@item.MedicinePiece</td>
+                                            <td>@item.MedicineType</td>
+                                            <td>@item.MedicinePrescription</td>
+                                            <td><a asp-controller="Pharmacy" asp-action="PharmacyOparation" asp-route-id="@item.MedicineId" class="btn btn-success"> Güncelle </a></td>
+
+                                        </tr>
+                                    </tbody>
+                                }
                             </table>
                         </div>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
-                        <button type="button" class="btn btn-primary btn-sm">
-                            Eczane Detayı
-                        </button>
-                        <br />
-                        <br />
-                        Doluluk Oranı
-                        <div class="progress">
-                            <div class="progress-bar bg-success"
-                                 role="progressbar"
-                                 style="width: 25%"
-                                 aria-valuenow="25"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100">
-                                25%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ilaç listeden sil  -->
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title"> İlaç Silme </h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="text-primary">
+                                <th>İlaç Adı</th>
+                                <th>İlaç Parçası</th>
+                                <th>İlaç Tipi</th>
+                                <th>İlaç Reçetesi</th>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                    <tbody>
+                                        <tr>
+                                            <td>@item.MedicineName</td>
+                                            <td>@item.MedicinePiece</td>
+                                            <td>@item.MedicineType</td>
+                                            <td>@item.MedicinePrescription</td>
+                                            <td><a asp-controller="Pharmacy" asp-action="DeletePharmacy" asp-route-id="@item.MedicineId" class="btn btn-success"> Güncelle </a></td>
+
+                                        </tr>
+                                    </tbody>
+                                }
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        }
-</div>
+    </div>
+

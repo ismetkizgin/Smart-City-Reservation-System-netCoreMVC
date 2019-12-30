@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -18,61 +17,38 @@
     <div class="wrapper ">
         <div class="sidebar" data-color="orange">
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-                    CT
-                </a>
-                <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                    Creative Tim
-                </a>
+                <a href="#" class="simple-text logo-normal">EyeOn</a>
             </div>
             <div class="sidebar-wrapper" id="sidebar-wrapper">
                 <ul class="nav">
                     <li class="active ">
-                        <a href="./dashboard.html">
-                            <i class="now-ui-icons design_app"></i>
-                            <p>Dashboard</p>
+                        <a href="/Admin/FirmaKayit">
+                            <i class="fas fa-building"></i>
+                            <p>Firma Kayıt</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./icons.html">
-                            <i class="now-ui-icons education_atom"></i>
-                            <p>Icons</p>
+                        <a asp-controller="CarPark" asp-action="CarParkGetList">
+                            <i class="fas fa-car"></i>
+                            <p>OTOPARK</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./map.html">
-                            <i class="now-ui-icons location_map-big"></i>
-                            <p>Maps</p>
+                        <a asp-controller="PetrolStation" asp-action="PetrolStationGetList">
+                            <i class="fas fa-gas-pump"></i>
+                            <p>PETROL İSTASYONU</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./notifications.html">
-                            <i class="now-ui-icons ui-1_bell-53"></i>
-                            <p>Notifications</p>
+                        <a asp-controller="Pharmacy" asp-action="PharmacyGetList">
+                            <i class="fas fa-prescription-bottle-alt"></i>
+                            <p>ECZANE</p>
                         </a>
                     </li>
                     <li>
                         <a href="./user.html">
                             <i class="now-ui-icons users_single-02"></i>
                             <p>User Profile</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./tables.html">
-                            <i class="now-ui-icons design_bullet-list-67"></i>
-                            <p>Table List</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./typography.html">
-                            <i class="now-ui-icons text_caps-small"></i>
-                            <p>Typography</p>
-                        </a>
-                    </li>
-                    <li class="active-pro">
-                        <a href="./upgrade.html">
-                            <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-                            <p>Upgrade to PRO</p>
                         </a>
                     </li>
                 </ul>
@@ -137,26 +113,16 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header">
-                                <h5 class="title">Otopark Ekle</h5>
-                            </div>
-                            <div class="card-body all-icons">
-                                <div class="row">
-                                    @RenderBody()
-                                </div>
-                            </div>
+                            @RenderBody()
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/js/perfect-scrollbar.jquery.min.js"></script>
     <script src="~/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script>
-
 </body>
 </html>

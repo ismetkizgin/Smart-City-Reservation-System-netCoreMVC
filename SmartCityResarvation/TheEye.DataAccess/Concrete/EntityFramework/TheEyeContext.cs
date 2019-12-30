@@ -11,8 +11,6 @@ namespace TheEye.DataAccess.Concrete.EntityFramework
         public DbSet<PetrolStation> PetrolStations { get; set; }
         public DbSet<Request> Requests { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
-        public DbSet<Ssn> Ssn { get; set; }
-        public DbSet<Sss> Sss { get; set; }
         public DbSet<User> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

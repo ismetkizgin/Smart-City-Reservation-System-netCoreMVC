@@ -1,19 +1,25 @@
-﻿using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TheEye.Business.Abstract;
 using TheEye.Entities.Concrete;
-using TheEye.WebUl.Models;
+using TheEye.WebUl.Atributes;
+using TheEye.WebUl.Filters;
 
 namespace TheEye.WebUL.Controllers
 {
+    [ServiceFilter(typeof(LoginFilter))]
     public class PetrolStationController : Controller
     {
-        public IPetrolStationService _petrolStationService;
+        public IPetrolStationService PetrolStationService;
         public PetrolStationController(IPetrolStationService petrolStationService)
         {
-            _petrolStationService = petrolStationService;
+            PetrolStationService = petrolStationService;
         }
+
+        [Ignore]
         [Route("PetrolOfisi")]
         public ActionResult PetrolStation()
         { 
@@ -24,41 +30,45 @@ namespace TheEye.WebUL.Controllers
             //    if (result != null)
             //        return View();
             //}
-            List<PetrolStation> model = _petrolStationService.GetAll();
+            List<PetrolStation> model = PetrolStationService.GetAll();
             return View(model);
         }
 
         [Route("Admin/PetrolOfisiListesi")]
         public ActionResult PetrolStationGetList()
         {
-            List<PetrolStation> model = _petrolStationService.GetAll();
+            int userId = Convert.ToInt32(HttpContext.Session.GetString("UserId"));
+            List<PetrolStation> model = PetrolStationService.GetAll().Where(x => x.Company.UserId == userId).ToList();
             return View(model);
         }
 
-        [Route("Admin/PetrolOfisiEkleme")]
-        [Route("Admin/PetrolOfisiGuncelle/{id}")]
-        public ActionResult PetrolStationOparation(int id = 0)
+        [Route("Admin/PetrolOfisiBilgiGirisi/{companyId}")]
+        public ActionResult PetrolStationAdd(int companyId)
         {
-            if (id == 0)
-                return View();
-            var modal = _petrolStationService.Get(5);
+            var modal = new PetrolStation
+            {
+                PetrolMarkets = false,
+                PetrolTire = false,
+                PetrolWashing = false,
+                CompanyId = Convert.ToInt32(HttpContext.Session.GetString("UserId"))
+            };
+            PetrolStationService.Add(modal);
+            return View("PetrolStationOparation", modal);
+        }
+
+        [Route("Admin/PetrolOfisiGuncelle/{id}")]
+        public ActionResult PetrolStationOparation(int id)
+        {
+            var modal = PetrolStationService.Get(5);
             return View(modal);
         }
 
         public ActionResult PetrolStationOparationCrud(PetrolStation petrolStation)
         {
             if(petrolStation.PetrolId == 0)
-                _petrolStationService.Add(petrolStation);
+                PetrolStationService.Add(petrolStation);
             else
-                _petrolStationService.Update(petrolStation);
-            return RedirectToAction("PetrolStationGetList");
-        }
-
-        public ActionResult DeletePetrolStation(int id)
-        {
-            PetrolStation petrolStation = _petrolStationService.Get(id);
-            _petrolStationService.Delete(petrolStation);
-            TempData.Add("Message", "Silme işleminiz başarılı bir şekilde gerçekleştirirldi.");
+                PetrolStationService.Update(petrolStation);
             return RedirectToAction("PetrolStationGetList");
         }
     }

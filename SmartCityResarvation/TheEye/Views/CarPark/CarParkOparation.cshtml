@@ -1,120 +1,64 @@
 ﻿@model TheEye.Entities.Concrete.CarPark
-
 @{
-    ViewBag.Title = "title";
     Layout = "AdminSite/_AdminLayout";
 }
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="forms-main">
-                <h2 class="inner-tittle">Otopark Ekleme</h2>
-                <div class="graph-form">
-                    <div class="validation-form">
-                        <form asp-controller="CarPark" asp-action="CarParkOptionsCrud" method="post">
-                            <div class="vali-form">
-                                <div class="col-md-12 form-group1">
-                                    <label asp-for="Company.CompanyName" class="control-label">Otopark Adı:</label>
-                                    <input asp-for="Company.CompanyName" type="text" placeholder="Otopark Adı" required name="CompanyName">
-                                </div>
-                            </div>
-                            <div class="clearfix"> </div>
-                            <div class="vali-form">
-                                <div class="col-md-6 form-group1">
-                                    <label class="control-label">Otopark Telefon Numarası:</label>
-                                    <input type="text" placeholder="Otopark Telefon Numarası" required="">
-                                </div>
-                                <div class="col-md-6 form-group1">
-                                    <label class="control-label">Otopark Mail Adresi:</label>
-                                    <input type="text" placeholder="Otopark Mail Adresi" required="">
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                            <div class="clearfix"> </div>
-                            <div class="col-md-12 form-group1 ">
-                                <label class="control-label">Otopark Adresi:</label>
-                                <textarea placeholder="Otopark Adresi:" required=""></textarea>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="vali-form">
-                                <div class="col-md-6 form-group1">
-                                    <label class="control-label">Şehir:</label>
-                                    <input type="text" placeholder="Şehir" required="">
-                                </div>
-                                <div class="col-md-6 form-group1 form-last">
-                                    <label class="control-label">Bölge:</label>
-                                    <input type="text" placeholder="Bölge" required="">
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                            <div class="clearfix"> </div>
-                            <div class="vali-form">
-                                <div class="col-md-6 form-group1">
-                                    <label asp-for="CarParkMax" class="control-label">Otopark Kapasitesi:</label>
-                                    <input asp-for="CarParkMax" type="text" placeholder="Otopark Kapasitesi" required name="CarParkMax">
-                                </div>
-                                <div class="col-md-6 form-group1 form-last">
-                                    <label asp-for="CarParkNull" class="control-label">Otopark Kat Sayısı:</label>
-                                    <input asp-for="CarParkNull" type="text" placeholder="Otopark Kat Sayısı" required name="CarParkNull">
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                            <div class="col-md-4">
-                                Araç yıkama var mı?
-                                <div class="form-check">
-                                    <input asp-for="CarParkWashing" class="form-check-input" type="radio" name="CarParkWashing" value="option1" checked>
-                                    <label asp-for="CarParkWashing" class="form-check-label" for="exampleRadios1">
-                                        Var
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input asp-for="CarParkWashing" class="form-check-input" type="radio" name="CarParkWashing"  value="option1" checked>
-                                    <label asp-for="CarParkWashing" class="form-check-label" for="exampleRadios1">
-                                        Yok
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                Araç lastik değişimi var mı?
-                                <div class="form-check">
-                                    <input asp-for="CarParkTire" class="form-check-input" type="radio" name="CarParkTire" value="option1" checked>
-                                    <label asp-for="CarParkTire" class="form-check-label" for="exampleRadios1">
-                                        Var
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input asp-for="CarParkTire" class="form-check-input" type="radio" name="CarParkTire" value="option1" checked>
-                                    <label asp-for="CarParkTire" class="form-check-label" for="exampleRadios1">
-                                        Yok
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                Engelli park alanı var mı?
-                                <div class="form-check">
-                                    <input asp-for="CarParkDisabled" class="form-check-input" type="radio" name="CarParkDisabled" value="option1" checked>
-                                    <label asp-for="CarParkDisabled" class="form-check-label" for="exampleRadios1">
-                                        Var
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input asp-for="CarParkDisabled" class="form-check-input" type="radio" name="CarParkDisabled" value="option1" checked>
-                                    <label asp-for="CarParkDisabled" class="form-check-label" for="exampleRadios1">
-                                        Yok
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-8 form-group button-2 text-right">
-                                <input type="hidden" asp-for="CarParkId" />
-                                <button type="submit" class="btn btn-primary" value="AddCarPark">Kaydet</button>
-                                <button type="reset" class="btn btn-default">Sıfırla</button>
-                            </div>
-                            <div class="clearfix"></div>
-                        </form>
-                    </div>
+<div class="card-header">
+    <h5 class="title">Otopark İçerik Güncelleme</h5>
+</div>
+<div class="card-body">
+    <form asp-controller="CarPark" asp-action="CarParkOparation" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CarParkMax">Otopark Kapasitesi:</label>
+                    <input asp-for="CarParkMax" type="text" class="form-control" placeholder="Otopark Kapasitesi" value="" required="" name="CarParkMax">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="CarParkNull">Otopark Kat Sayisi:</label>
+                    <input asp-for="CarParkNull" type="text" class="form-control" placeholder="Otopark Kat Sayisi" value="" required="" name="CarParkNull">
                 </div>
             </div>
         </div>
-    </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1"> Otopark Engelli Alanı :</label>
+                    <select class="form-control" asp-for="CarParkDisabled" name="CarParkDisabled">
+                        <option>Yok</option>
+                        <option>Var</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1"> Otopark Yıkama Alanı :</label>
+                    <select class="form-control" asp-for="CarParkWashing" name="CCarParkWashing">
+                        <option>Yok</option>
+                        <option>Var</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1"> Otopark Tekerlek Değiştirme :</label>
+                    <select class="form-control" asp-for="CarParkTire" name="CarParkTire">
+                        <option>Yok</option>
+                        <option>Var</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block" value="CarParkOparation"> Otopark Ekle </button>
+            </div>
+        </div>
+    </form>
 </div>

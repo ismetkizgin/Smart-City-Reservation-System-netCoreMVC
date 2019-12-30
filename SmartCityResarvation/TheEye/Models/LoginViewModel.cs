@@ -13,6 +13,5 @@ namespace TheEye.WebUl.Models
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-        public bool LoginState { get; set; }
     }
 }

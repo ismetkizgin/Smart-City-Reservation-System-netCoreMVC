@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using TheEye.Core.Entities;
 
 namespace TheEye.Entities.Concrete
@@ -15,10 +14,11 @@ namespace TheEye.Entities.Concrete
         public string CompanyDistrict { get; set; }
         public DateTime? CompanyTime { get; set; }
         public int CompanyType { get; set; }
+        public int UserId { get; set; }
+        public string CompanyImage { get; set; }
 
         public virtual CarPark CarPark { get; set; }
         public virtual Medicine Medicines { get; set; }
         public virtual PetrolStation PetrolStations { get; set; }
-        public virtual ICollection<Ssn> Ssn { get; set; }
     }
 }

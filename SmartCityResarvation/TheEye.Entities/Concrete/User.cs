@@ -21,6 +21,5 @@ namespace TheEye.Entities.Concrete
 
         public virtual ICollection<Request> Requests { get; set; }
         public virtual ICollection<Reservation> Reservations { get; set; }
-        public virtual ICollection<Ssn> Ssn { get; set; }
     }
 }

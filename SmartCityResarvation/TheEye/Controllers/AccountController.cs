@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using TheEye.Business.Abstract;
 using TheEye.Entities.Concrete;
-using TheEye.WebUl.Models;
+using TheEye.WebUl.Atributes;
+using TheEye.WebUl.Filters;
 
 namespace TheEye.WebUl.Controllers
 {
+    [ServiceFilter(typeof(LoginFilter))]
     public class AccountController : Controller
     {
         private IUserService _userService;
@@ -13,22 +16,50 @@ namespace TheEye.WebUl.Controllers
         {
             _userService = userService;
         }
-        public ActionResult Login(LoginViewModel loginViewModel)
+
+        [Ignore]
+        public ActionResult SignIn(User user)
         {
-            User loginData = _userService.LoginControlGet(loginViewModel.UserName, loginViewModel.Password);
+            User loginData = _userService.LoginControlGet(user.UserName, user.UserPassword);
             if (loginData != null)
             {
                 string token = Guid.NewGuid().ToString() + "æ" + DateTime.Now;
                 HttpContext.Session.Set("token", System.Text.Encoding.UTF8.GetBytes(token));
+                HttpContext.Session.SetString("UserId", loginData.UserId.ToString());
                 ViewBag.Token = token;
-                return RedirectToAction("Pharmacy","Pharmacy");
+                return RedirectToAction("Admin");
             }
             else
             {
-                TempData.Add("Message", "Kullanıcı bilgilerini lütfen konrol ediniz.");
-                TempData.Add("stateLogin","false");
                 return RedirectToAction("Index", "Home");
             }
+        }
+
+        [Ignore]
+        [Route("GirisYap")]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [Route("Admin")]
+        public ActionResult Admin()
+        {
+            //var session = HttpContext.Session;
+            //if (session != null)
+            //{
+            //    HttpContext.Session.TryGetValue("token", out var result);
+            //    if (result != null)
+            //        return View();
+            //}
+            return View();
+        }
+
+        [Ignore]
+        public ActionResult Register(User user)
+        {
+            _userService.Add(user);
+            return RedirectToAction("Login");
         }
     }
 }

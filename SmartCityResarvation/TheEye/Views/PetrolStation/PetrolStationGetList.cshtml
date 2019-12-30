@@ -5,42 +5,45 @@
     Layout = "AdminSite/_AdminLayout";
 }
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h3 class="inner-tittle two">Petrol İstasyonu İçerik Listesi</h3>
-            <div class="graph">
-                <div class="tables">
-                    <table class="table table-hover text-center">
-                        <thead>
-                            <tr>
-                                <th class="text-center">#</th>
-                                <th class="text-center">Petrol Marketi</th>
-                                <th class="text-center">Petrol Yıkama</th>
-                                <th class="text-center">Petrol Tekerlek</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var item in Model)
-                            {
-                                <tr>
-                                    <th scope="row">@item.PetrolId</th>
-                                    <td>@item.PetrolMarkets </td>
-                                    <td>@item.PetrolWashing</td>
-                                    <td>@item.PetrolTire</td>
-                                    <td>
-                                        <a class="btn btn-success" asp-controller="PetrolStation" asp-action="Update" asp-route-id="@item.PetrolId">Güncelle</a>
-                                    </td>
-                                    <td>
-                                        <a class="btn btn-danger" asp-controller="PetrolStation" asp-action="DeletePetrolStation" asp-route-id="@item.PetrolId">Sil</a>
-                                    </td>
-                                </tr>
 
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+<div class="card-header">
+    <h4 class="card-title">Petrol İstasyonu Listesi</h4>
+</div>
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="text-primary">
+                <tr>
+                    <th>Türü</th>
+                    <th>Adı</th>
+                    <th>Mail Adresi</th>
+                    <th>Şehir</th>
+                    <th>Bölge</th>
+                    <th>Kapanış Saati</th>
+                    <th>Adres</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.PetrolFuelType</td>
+                        <td>@item.Company.CompanyName</td>
+                        <td>@item.Company.CompanyMail</td>
+                        <td>@item.Company.CompanyCity</td>
+                        <td>@item.Company.CompanyDistrict</td>
+                        <td>@item.Company.CompanyTime</td>
+                        <td>@item.Company.CompanyAdress</td>
+                        <td> <a asp-controller="PetrolStation" asp-action="PetrolStationOparation" asp-route-id="@item.PetrolId" class="btn btn-success">İçerik Güncelleme</a></td>
+                        <td> <a asp-controller="Company" asp-action="CompanyUpdate" asp-route-id="@item.Company.CompanyId" class="btn btn-success">Firma Bilgi Güncelle</a></td>
+                        <td> <a asp-controller="Company" asp-action="CompanyDelete" asp-route-id="@item.PetrolId" class="btn btn-danger text-light">Sil</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>

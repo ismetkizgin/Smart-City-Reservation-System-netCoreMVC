@@ -14,7 +14,7 @@ namespace TheEye.Entities.Concrete
         public int? CarParkMax { get; set; }
         public Boolean CarParkDisabled { get; set; }
         public Boolean CarParkWashing { get; set; }
-        public string CarParkTire { get; set; }
+        public Boolean CarParkTire { get; set; }
         public int? CarParkNull { get; set; }
         public int? CompanyId { get; set; }
         public Boolean CarParkMarket { get; set; }
