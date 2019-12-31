@@ -3,9 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using TheEye.Business.Abstract;
 using TheEye.Entities.Concrete;
 using TheEye.WebUl.Filters;
@@ -17,9 +20,11 @@ namespace TheEye.WebUl.Controllers
     public class CompanyController : Controller
     {
         private ICompanyService _companyService;
-        public CompanyController(ICompanyService companyService)
+        private IHostingEnvironment _environment;
+        public CompanyController(ICompanyService companyService, IHostingEnvironment enviroment)
         {
             _companyService = companyService;
+            _environment = enviroment ?? throw new ArgumentNullException(nameof(enviroment));
         }
 
         [Route("Admin/FirmaKayit")]
@@ -28,8 +33,22 @@ namespace TheEye.WebUl.Controllers
             return View();
         }
 
-        public async Task<ActionResult> CompanyControlAdd(CompanyViewModal companyViewModal)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CompanyControlAdd(CompanyViewModal companyViewModal)
         {
+            string filenameadd = DateTime.Now.ToString(CultureInfo.InvariantCulture).Replace(" ", "_").Replace(":", "_").Replace(".", "_").Replace(" ", "_").Replace("/", "_").Replace("\\", "_");
+            string images = Path.Combine(_environment.WebRootPath, "images/CompanyImages");
+            string imagesPath = filenameadd + companyViewModal.ImageFile.FileName;
+
+            if (companyViewModal.ImageFile.Length > 0)
+            {
+                await using (var fileStream = new FileStream(Path.Combine(images,
+                    imagesPath), FileMode.Create))
+                {
+                    await companyViewModal.ImageFile.CopyToAsync(fileStream);
+                }
+            }
+            companyViewModal.CompanyImage = imagesPath;
             using (var client = new HttpClient())
             {
                 var response = await client.GetAsync(string.Format("http://192.168.1.3:5000/CompanyControlTax?TaxNo={0}&Name={1}", companyViewModal.CompanyTaxNo, companyViewModal.CompanyName));
@@ -56,7 +75,7 @@ namespace TheEye.WebUl.Controllers
                 company = _companyService.GetAll().OrderByDescending(x => x.CompanyId).FirstOrDefault();
 
                 if (companyType == 0)
-                    return RedirectToAction("CarParkAdd", "CarPark", new { companyId = company?.CompanyId});
+                    return RedirectToAction("CarParkAdd", "CarPark", new { companyId = company?.CompanyId });
                 else if (companyType == 1)
                     return RedirectToAction("PetrolStationAdd", "PetrolStation", new { companyId = company?.CompanyId });
                 else

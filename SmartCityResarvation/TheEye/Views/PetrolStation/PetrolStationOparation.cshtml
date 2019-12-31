@@ -1,7 +1,7 @@
 ﻿@model TheEye.Entities.Concrete.PetrolStation
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Petrol Ofisi İşlemleri";
     Layout = "AdminSite/_AdminLayout";
 }
 <div class="container">
@@ -12,73 +12,52 @@
                     <h5 class="title">Petrol İçerik Güncelleme</h5>
                 </div>
                 <div class="card-body">
-                    <form asp-controller="PetrolStation" asp-action="PetrolStationOparation" method="post">
+                    <form asp-controller="PetrolStation" asp-action="PetrolStationOparationCrud" method="post">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="form-group text-center">
-                                    <p>Petrol İstasyonu Yakıt Türü : </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="custom-control custom-checkbox custom-control-inline">
-                                    <input asp-for="PetrolFuelType" type="checkbox" class="form-group" name="PetrolFuelType">
-                                    <label class="custom-control-label" asp-for="PetrolFuelType">Normal Benzin</label>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="custom-control custom-checkbox custom-control-inline">
-                                    <input asp-for="PetrolFuelType" type="checkbox" class="form-group" name="PetrolFuelType">
-                                    <label class="custom-control-label" asp-for="PetrolFuelType">Süper Benzin</label>
-                                </div>
-                            </div>
-
-                            <div class="col-4">
-                                <div class="custom-control custom-checkbox custom-control-inline">
-                                    <input asp-for="PetrolFuelType" type="checkbox" class="form-group" name="PetrolFuelType"> Kurşunsuz Benzin
-                                    <label class="custom-control-label" asp-for="PetrolFuelType">Kurşunsuz Benzin</label>
+                                <div class="form-group">
+                                    <label asp-for="PetrolFuelType">Yakıt Türleri:</label>
+                                    <input asp-for="PetrolFuelType" type="text" class="form-control" placeholder="Otopark Kapasitesi" required="" name="PetrolFuelType">
                                 </div>
                             </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-md-6">
-                                <input asp-for="PetrolFuelType" type="checkbox" class="form-group" name="PetrolFuelType">
-                                <label class="custom-control-label" asp-for="PetrolFuelType">Motorinn</label>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="PetrolTire"> Tekerlek Değiştirme :</label>
+                                    <select class="form-control" asp-for="PetrolTire" aria-item name="PetrolTire">
+                                        <option value="true">Var</option>
+                                        <option value="false">Yok</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <input asp-for="PetrolFuelType" type="checkbox" class="form-group" name="PetrolFuelType">
-                                <label class="custom-control-label" asp-for="PetrolFuelType">LPG</label>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="PetrolWashing"> Petrol Ofisi Yıkama Alanı :</label>
+                                    <select class="form-control" asp-for="PetrolWashing" name="PetrolWashing">
+                                        <option value="true">Var</option>
+                                        <option value="false">Yok</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="PetrolMarkets"> Petrol Ofisi Marketi :</label>
+                                    <select class="form-control" asp-for="PetrolMarkets" name="PetrolMarkets">
+                                        <option value="true">Var</option>
+                                        <option value="false">Yok</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <br>
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="custom-control custom-checkbox custom-control-inline">
-                                    <input asp-for="PetrolMarkets" type="checkbox" class="form-group" name="PetrolMarkets">
-                                    <label class="custom-control-label" asp-for="PetrolMarkets">Petrol Marketi :</label>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="custom-control custom-checkbox custom-control-inline">
-                                    <input asp-for="PetrolWashing" type="checkbox" class="form-group" name="PetrolWashing">
-                                    <label class="custom-control-label" asp-for="PetrolWashing">Petrol Yıkama :</label>
-                                </div>
-                            </div>
-
-                            <div class="col-4">
-                                <div class="custom-control custom-checkbox custom-control-inline">
-                                    <input asp-for="PetrolTire" type="checkbox" class="form-group" name="PetrolTire"> Kurşunsuz Benzin
-                                    <label class="custom-control-label" asp-for="PetrolTire">Petrol Tekerlek Değiştirme :</label>
-                                </div>
-                            </div>
-                        </div>
-                        
                         <br>
                         <div class="row">
                             <div class="col-md-4"></div>
                             <div class="col-md-4"></div>
+                            <input type="hidden" asp-for="PetrolId" name="PetrolId" />
+                            <input type="hidden" asp-for="CompanyId" name="CompanyId" />
                             <div class="col-md-4">
                                 <button class="btn btn-primary btn-block" value="PetrolOparation"> İçerik Güncelle </button>
                             </div>

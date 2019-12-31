@@ -1,10 +1,16 @@
 ﻿@model List<TheEye.Entities.Concrete.Company>
+@{
+    ViewBag.Title = "Eczane Listesi";
+}
+
+@await Html.PartialAsync("MainSite/_Banner")
 <div class="container">
-    <br/>
+    <br />
     <div class="input-group mb-3">
         <input id="input-text" type="text" class="form-control" placeholder="Arama Yap..." aria-label="Recipient's username" aria-describedby="button-addon2">
     </div>
-    @foreach(var item in Model) { 
+    @foreach (var item in Model)
+    {
         <div class="card mb-3" style="max-width: 1540px;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -17,45 +23,41 @@
                     <div class="card-body">
                         <h5 class="card-title">@item.CompanyName</h5>
                         <div class="col-md-12">
-                            <table class="table">
-                                <thead>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">İl</th>
+                                            <th scope="col">İlçe</th>
+                                            <th scope="col">Telefon</th>
+                                            <th scope="col">E-mail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>@item.CompanyCity</td>
+                                            <td>@item.CompanyDistrict</td>
+                                            <td>@item.CompanyPhone</td>
+                                            <td>@item.CompanyMail</td>
+                                        </tr>
+                                    </tbody>
+                                    <thead>
                                     <tr>
-                                        <th scope="col">İlaç Reçetesi</th>
-                                        <th scope="col">İlaç Tipi</th>
-                                        <th scope="col">İlaç Parçası</th>
+                                        <th>Adres</th>
                                     </tr>
-                                </thead>
-                                <tbody>
+                                    </thead>
+                                    <tbody>
                                     <tr>
-                                        <td>.</td>
-                                        <td>.</td>
-                                        <td>.</td>
+                                        <td>@item.CompanyAdress</td>
                                     </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
-                        <button type="button" class="btn btn-primary btn-sm">
-                            Eczane Detayı
-                        </button>
-                        <br />
-                        <br />
-                        Doluluk Oranı
-                        <div class="progress">
-                            <div class="progress-bar bg-success"
-                                 role="progressbar"
-                                 style="width: 25%"
-                                 aria-valuenow="25"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100">
-                                25%
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        }
+    }
 </div>
+

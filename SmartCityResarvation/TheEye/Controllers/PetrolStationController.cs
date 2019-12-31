@@ -22,7 +22,7 @@ namespace TheEye.WebUL.Controllers
         [Ignore]
         [Route("PetrolOfisi")]
         public ActionResult PetrolStation()
-        { 
+        {
             //var session = HttpContext.Session;
             //if (session != null)
             //{
@@ -59,16 +59,13 @@ namespace TheEye.WebUL.Controllers
         [Route("Admin/PetrolOfisiGuncelle/{id}")]
         public ActionResult PetrolStationOparation(int id)
         {
-            var modal = PetrolStationService.Get(5);
+            var modal = PetrolStationService.Get(id);
             return View(modal);
         }
 
         public ActionResult PetrolStationOparationCrud(PetrolStation petrolStation)
         {
-            if(petrolStation.PetrolId == 0)
-                PetrolStationService.Add(petrolStation);
-            else
-                PetrolStationService.Update(petrolStation);
+            PetrolStationService.Update(petrolStation);
             return RedirectToAction("PetrolStationGetList");
         }
     }

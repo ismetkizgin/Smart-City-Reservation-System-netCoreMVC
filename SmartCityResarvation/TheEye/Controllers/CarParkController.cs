@@ -29,14 +29,7 @@ namespace TheEye.WebUL.Controllers
 
         [Route("Admin/OtoparkBilgiGirisi/{companyId}")]
         public ActionResult CarParkAdd(int companyId)
-        {   
-            //var session = HttpContext.Session;
-            //if (session != null)
-            //{
-            //    HttpContext.Session.TryGetValue("token", out var result);
-            //    if (result != null)
-            //        return View();
-            //}
+        {
             var modal = new CarPark
             {
                 CarParkDisabled = false,
@@ -48,7 +41,7 @@ namespace TheEye.WebUL.Controllers
                 CompanyId = companyId
             };
             _carParkService.Add(modal);
-            return View("CarParkOparation",modal);
+            return View("CarParkOparation", modal);
         }
 
         [Route("Admin/OtoparkGuncelle/{id}")]
@@ -60,20 +53,16 @@ namespace TheEye.WebUL.Controllers
 
         public ActionResult CarParkOptionsCrud(CarPark carPark)
         {
-            if (carPark.CarParkId == 0)
-                _carParkService.Add(carPark);
-            else
-                _carParkService.Update(carPark);
+            _carParkService.Update(carPark);
             return RedirectToAction("CarParkGetList");
         }
 
         [Route("Admin/OtoparkListesi")]
         public ActionResult CarParkGetList()
         {
-            int userId = Convert.ToInt32( HttpContext.Session.GetString("UserId"));
+            int userId = Convert.ToInt32(HttpContext.Session.GetString("UserId"));
             List<CarPark> model = _carParkService.GetAll().Where(x => x.Company.UserId == userId).ToList();
-            //List<CarPark> model = _carParkService.GetAll();
             return View(model);
         }
     }
-}   
+}

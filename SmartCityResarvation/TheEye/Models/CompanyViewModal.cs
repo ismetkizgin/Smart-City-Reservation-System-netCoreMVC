@@ -1,18 +1,13 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations.Schema;
+using TheEye.Entities.Concrete;
 
 namespace TheEye.WebUl.Models
 {
-    public class CompanyViewModal
+    public class CompanyViewModal : Company
     {
-        public int CompanyId { get; set; }
-        public string CompanyName { get; set; }
-        public string CompanyPhone { get; set; }
-        public string CompanyMail { get; set; }
-        public string CompanyAdress { get; set; }
-        public string CompanyCity { get; set; }
-        public string CompanyDistrict { get; set; }
-        public DateTime? CompanyTime { get; set; }
-        public int CompanyType { get; set; }
         public int CompanyTaxNo { get; set; }
+        [NotMapped]
+        public IFormFile ImageFile { get; set; }
     }
 }

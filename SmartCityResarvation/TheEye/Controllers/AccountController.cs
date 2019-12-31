@@ -39,19 +39,19 @@ namespace TheEye.WebUl.Controllers
         [Route("GirisYap")]
         public ActionResult Login()
         {
+            var session = HttpContext.Session;
+            if (session != null)
+            {
+                HttpContext.Session.TryGetValue("token", out var result);
+                if (result != null)
+                    return RedirectToAction("Admin");
+            }
             return View();
         }
 
         [Route("Admin")]
         public ActionResult Admin()
         {
-            //var session = HttpContext.Session;
-            //if (session != null)
-            //{
-            //    HttpContext.Session.TryGetValue("token", out var result);
-            //    if (result != null)
-            //        return View();
-            //}
             return View();
         }
 
@@ -60,6 +60,26 @@ namespace TheEye.WebUl.Controllers
         {
             _userService.Add(user);
             return RedirectToAction("Login");
+        }
+
+        [Route("Admin/Hesabim")]
+        public ActionResult MyAccount()
+        {
+            int userId = Convert.ToInt32(HttpContext.Session.GetString("UserId"));
+            var modal = _userService.Get(userId);
+            return View(modal);
+        }
+
+        public ActionResult AccountUpdate(User user)
+        {
+            _userService.Update(user);
+            return RedirectToAction("Admin");
+        }
+
+        public ActionResult LogOff()
+        {
+            HttpContext.Session.Remove("token");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

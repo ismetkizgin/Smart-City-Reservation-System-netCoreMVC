@@ -250,7 +250,6 @@ C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\TheEye.WebUl.RazorCoreGenerate.cache
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\CarPark\CarPark.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
-C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Home\Content.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\PetrolStation\PetrolStation.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Pharmacy\Pharmacy.cshtml.g.cs
@@ -294,7 +293,6 @@ C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\bin\Debug\netcoreapp3.
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\CarPark\CarParkOparation.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\PetrolStation\PetrolStationOparation.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Pharmacy\PharmacyOparation.cshtml.g.cs
-C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Pharmacy\Medicine.cshtml.g.cs
 C:\Users\kadir\Desktop\TheEyeGit\SmartCityResarvation\TheEye\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\kadir\Desktop\TheEyeGit\SmartCityResarvation\TheEye\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\kadir\Desktop\TheEyeGit\SmartCityResarvation\TheEye\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -627,3 +625,7 @@ C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Company\CompanyAdd.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Company\CompanyUpdate.cshtml.g.cs
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Account\MyAccount.cshtml.g.cs
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Medicine\MedicineGetList.cshtml.g.cs
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Medicine\MedicineOparation.cshtml.g.cs
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Medicine\Medicine.cshtml.g.cs

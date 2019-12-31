@@ -439,7 +439,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Medicine\" />
+    <Folder Include="wwwroot\images\CompanyImages\" />
   </ItemGroup>
 
 </Project>

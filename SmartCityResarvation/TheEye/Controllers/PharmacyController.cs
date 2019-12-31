@@ -21,7 +21,7 @@ namespace TheEye.WebUL.Controllers
         [Route("Eczane")]
         public ActionResult Pharmacy()
         {
-            var model = _companyService.GetAll();
+            var model = _companyService.GetAll().Where(x => x.CompanyType == 2).ToList();
             return View(model);
         }
 

@@ -10,12 +10,6 @@ namespace TheEye.WebUL.Controllers
             return View();
         }
 
-        [Route("iletisim")]
-        public ActionResult Content()
-        {
-            return View();
-        }
-
         [Route("Hakkinda")]
         public ActionResult About()
         {

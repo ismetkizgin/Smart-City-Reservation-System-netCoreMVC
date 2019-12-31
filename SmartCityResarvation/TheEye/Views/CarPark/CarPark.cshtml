@@ -1,6 +1,6 @@
 ﻿@model List<TheEye.Entities.Concrete.CarPark>
 @{
-    ViewBag.Title = "OTOPARK LİSTESİ";
+    ViewBag.Title = "Otopark Listesi";
 }
 
 @await Html.PartialAsync("MainSite/_Banner")
@@ -23,53 +23,49 @@
                     <div class="card-body">
                         <h5 class="card-title">@item.Company.CompanyName</h5>
                         <div class="col-md-12">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Market</th>
-                                        <th scope="col">Araç Yıkama</th>
-                                        <th scope="col">Boş Park Yeri Sayısı</th>
-                                        <th scope="col">Engelli Araç Parkı</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        @if (item.CarParkMarket)
-                                        {
-                                            <td>Var</td>
-                                        }
-                                        else
-                                        {
-                                            <td>Yok</td>
-                                        }
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Market</th>
+                                            <th scope="col">Araç Yıkama</th>
+                                            <th scope="col">Boş Park Yeri Sayısı</th>
+                                            <th scope="col">Engelli Araç Parkı</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            @if (item.CarParkMarket)
+                                            {
+                                                <td>Var</td>
+                                            }
+                                            else
+                                            {
+                                                <td>Yok</td>
+                                            }
 
-                                        @if (item.CarParkWashing)
-                                        {
-                                            <td>Var</td>
-                                        }
-                                        else
-                                        {
-                                            <td>Yok</td>
-                                        }
-                                        <td>@item.CarParkMax</td>
-                                        @if (item.CarParkDisabled)
-                                        {
-                                            <td>Var</td>
-                                        }
-                                        else
-                                        {
-                                            <td>Yok</td>
-                                        }
+                                            @if (item.CarParkWashing)
+                                            {
+                                                <td>Var</td>
+                                            }
+                                            else
+                                            {
+                                                <td>Yok</td>
+                                            }
+                                            <td>@item.CarParkMax</td>
+                                            @if (item.CarParkDisabled)
+                                            {
+                                                <td>Var</td>
+                                            }
+                                            else
+                                            {
+                                                <td>Yok</td>
+                                            }
                                     </tr>
-                                </tbody>
-                            </table>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        @*<p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
-                        <button type="button" class="btn btn-primary btn-sm">
-                            Otopark Detayı
-                        </button>*@
                         <br />
                         <br />
                         @{
@@ -88,9 +84,45 @@
                                 @yuzde%
                             </div>
                         </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <p>
+                    <br />
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Otopark Detaylarını Getir
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">İl</th>
+                                        <th scope="col">İlçe</th>
+                                        <th scope="col">Adres</th>
+                                        <th scope="col">Telefon</th>
+                                        <th scope="col">E-mail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>@item.Company.CompanyCity</td>
+                                        <td>@item.Company.CompanyDistrict</td>
+                                        <td>@item.Company.CompanyAdress</td>
+                                        <td>@item.Company.CompanyPhone</td>
+                                        <td>@item.Company.CompanyMail</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     }
 </div>

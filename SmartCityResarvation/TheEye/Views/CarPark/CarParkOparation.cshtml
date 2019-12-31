@@ -1,24 +1,25 @@
 ﻿@model TheEye.Entities.Concrete.CarPark
 @{
     Layout = "AdminSite/_AdminLayout";
+    ViewBag.Title = "Otopark İşlemleri";
 }
 
 <div class="card-header">
     <h5 class="title">Otopark İçerik Güncelleme</h5>
 </div>
 <div class="card-body">
-    <form asp-controller="CarPark" asp-action="CarParkOparation" method="post">
+    <form asp-controller="CarPark" asp-action="CarParkOptionsCrud" method="post">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="CarParkMax">Otopark Kapasitesi:</label>
-                    <input asp-for="CarParkMax" type="text" class="form-control" placeholder="Otopark Kapasitesi" value="" required="" name="CarParkMax">
+                    <input asp-for="CarParkMax" type="text" class="form-control" placeholder="Otopark Kapasitesi" required="" name="CarParkMax">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="CarParkNull">Otopark Kat Sayisi:</label>
-                    <input asp-for="CarParkNull" type="text" class="form-control" placeholder="Otopark Kat Sayisi" value="" required="" name="CarParkNull">
+                    <input asp-for="CarParkNull" type="text" class="form-control" placeholder="Otopark Kat Sayisi" required="" name="CarParkNull">
                 </div>
             </div>
         </div>
@@ -26,28 +27,37 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1"> Otopark Engelli Alanı :</label>
-                    <select class="form-control" asp-for="CarParkDisabled" name="CarParkDisabled">
-                        <option>Yok</option>
-                        <option>Var</option>
+                    <label asp-for="CarParkDisabled"> Otopark Engelli Alanı :</label>
+                    <select class="form-control" asp-for="CarParkDisabled" aria-item name="CarParkDisabled">
+                        <option value="true">Var</option>
+                        <option value="false">Yok</option>
                     </select>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1"> Otopark Yıkama Alanı :</label>
-                    <select class="form-control" asp-for="CarParkWashing" name="CCarParkWashing">
-                        <option>Yok</option>
-                        <option>Var</option>
+                    <label asp-for="CarParkWashing"> Otopark Yıkama Alanı :</label>
+                    <select class="form-control" asp-for="CarParkWashing" name="CarParkWashing">
+                        <option value="true">Var</option>
+                        <option value="false">Yok</option>
                     </select>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1"> Otopark Tekerlek Değiştirme :</label>
+                    <label asp-for="CarParkTire"> Otopark Tekerlek Değiştirme :</label>
                     <select class="form-control" asp-for="CarParkTire" name="CarParkTire">
-                        <option>Yok</option>
-                        <option>Var</option>
+                        <option value="true">Var</option>
+                        <option value="false">Yok</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="CarParkMarket"> Otopark Marketi :</label>
+                    <select class="form-control" asp-for="CarParkMarket" name="CarParkMarket">
+                        <option value="true">Var</option>
+                        <option value="false">Yok</option>
                     </select>
                 </div>
             </div>
@@ -56,9 +66,12 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
+            <input type="hidden" asp-for="CarParkId" name="CarParkId" />
+            <input type="hidden" asp-for="CompanyId" name="CompanyId" />
             <div class="col-md-4">
                 <button class="btn btn-primary btn-block" value="CarParkOparation"> Otopark Ekle </button>
             </div>
         </div>
+
     </form>
 </div>

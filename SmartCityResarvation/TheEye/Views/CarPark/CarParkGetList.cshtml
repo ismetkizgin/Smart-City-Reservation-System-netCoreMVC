@@ -1,48 +1,45 @@
 ﻿@model System.Collections.Generic.List<TheEye.Entities.Concrete.CarPark>
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Otopark Listesi";
     Layout = "AdminSite/_AdminLayout";
 }
 
 <div class="card-header">
     <h4 class="card-title">Otopark Listesi</h4>
 </div>
-<div class="card-body all-icons">
-    <div class="row">
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead class="text-primary">
-                        <tr>
-                            <th>Otopark Adı</th>
-                            <th>Otopark Telefon Numarası</th>
-                            <th>Otopark Mail Adresi</th>
-                            <th>Şehir</th>
-                            <th>Bölge</th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
 
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>@item.Company.CompanyName</td>
-                                <td>@item.Company.CompanyPhone</td>
-                                <td>@item.Company.CompanyMail</td>
-                                <td>@item.Company.CompanyCity</td>
-                                <td>@item.Company.CompanyDistrict</td>
-                                <td><a asp-controller="CarPark" asp-action="CarParkOparation" asp-route-id="@item.CarParkId" class="btn btn-success">Firma İçerik</a></td>
-                                <td><a asp-controller="Company" asp-action="CompanyUpdate" asp-route-id="@item.Company.CompanyId" class="btn btn-success">Firma Bilgi Güncelle</a></td>
-                                <td><a asp-controller="Company" asp-action="CompanyDelete" asp-route-id="@item.CompanyId" class="btn btn-danger text-light">Sil</a></td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-            </div>
-        </div>
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="text-primary">
+                <tr>
+                    <th>Otopark Adı</th>
+                    <th>Otopark Telefon Numarası</th>
+                    <th>Otopark Mail Adresi</th>
+                    <th>Şehir</th>
+                    <th>Bölge</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Company.CompanyName</td>
+                        <td>@item.Company.CompanyPhone</td>
+                        <td>@item.Company.CompanyMail</td>
+                        <td>@item.Company.CompanyCity</td>
+                        <td>@item.Company.CompanyDistrict</td>
+                        <td><a asp-controller="CarPark" asp-action="CarParkOparation" asp-route-id="@item.CarParkId" class="btn btn-success">Firma İçerik</a></td>
+                        <td><a asp-controller="Company" asp-action="CompanyUpdate" asp-route-id="@item.Company.CompanyId" class="btn btn-success">Firma Bilgi Güncelle</a></td>
+                        <td><a asp-controller="Company" asp-action="CompanyDelete" asp-route-id="@item.CompanyId" class="btn btn-danger text-light">Sil</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>

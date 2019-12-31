@@ -1,7 +1,7 @@
 ﻿@model TheEye.WebUl.Models.CompanyViewModal
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Firma Ekleme";
     Layout = "AdminSite/_AdminLayout";
 }
 
@@ -9,7 +9,7 @@
     <h5 class="title">Firma Katılım İsteği</h5>
 </div>
 <div class="card-body">
-    <form asp-controller="Company" asp-action="CompanyControlAdd" method="post">
+    <form asp-controller="Company" asp-action="CompanyControlAdd" enctype="multipart/form-data" method="post">
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
@@ -62,6 +62,14 @@
                     <label asp-for="CompanyTime">Kapanış Saati:</label>
                     <input asp-for="CompanyTime" type="text" class="form-control" placeholder="Kapanış Saati" name="CompanyTime"
                            required="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="custom-file">
+                    <input type="file" asp-for="ImageFile" type="file" class="custom-file-input" name="ImageFile">
+                    <label class="custom-file-label" asp-for="ImageFile">Lütfen Bir Fotoğraf Seçiniz...</label>
                 </div>
             </div>
         </div>

@@ -25,15 +25,26 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse px-3" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a asp-controller="Home" asp-action="index" class="nav-item nav-link">Anasayfa</a>
-                    <a asp-controller="Home" asp-action="Content" class="nav-item nav-link">İletişim</a>
-                    <a asp-controller="Home" asp-action="About" class="nav-item nav-link">Hakkımızda</a>
+                    <a asp-controller="CarPark" asp-action="CarPark" class="nav-item nav-link pl-3">Otopark</a>
+                    <a asp-controller="PetrolStation" asp-action="PetrolStation" class="nav-item nav-link pl-3">Petrol Ofisi</a>
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Eczane
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" asp-controller="Pharmacy" asp-action="Pharmacy">Eczaneler</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" asp-controller="Medicine" asp-action="Medicine">İlaçlar</a>
+                        </div>
+                    </li>
+                    <a asp-controller="Home" asp-action="About" class="nav-item nav-link pl-3">Hakkımızda</a>
                 </div>
             </div>
             <form class="form-inline my-2 my-lg-0" method="post">
-                <a  asp-controller="Account" asp-action="Login" type="button" class="btn btn-success btn-round btn-ouutline-success">Giriş Yap</a>
+                <a asp-controller="Account" asp-action="Login" type="button" class="btn btn-success btn-round btn-ouutline-success">Giriş Yap</a>
             </form>
         </div>
     </nav>
