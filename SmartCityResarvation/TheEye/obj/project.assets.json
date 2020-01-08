@@ -9017,6 +9017,7 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.0",
       "Microsoft.AspNetCore.Session >= 2.2.0",
+      "Microsoft.Extensions.Configuration.Binder >= 3.1.0",
       "Microsoft.Extensions.Logging.Debug >= 3.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.0",
       "TheEye.Business >= 1.0.0",
@@ -9084,6 +9085,10 @@
           "Microsoft.AspNetCore.Session": {
             "target": "Package",
             "version": "[2.2.0, )"
+          },
+          "Microsoft.Extensions.Configuration.Binder": {
+            "target": "Package",
+            "version": "[3.1.0, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",

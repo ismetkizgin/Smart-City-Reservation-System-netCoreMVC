@@ -280,7 +280,6 @@ C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\bin\Debug\netcoreapp3.
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\bin\Debug\netcoreapp3.1\TheEye.Entities.pdb
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\bin\Debug\netcoreapp3.1\TheEye.Core.pdb
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\TheEye.WebUl.csprojAssemblyReference.cache
-C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\TheEye.WebUl.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\TheEye.WebUl.Views.pdb
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\TheEye.WebUl.csproj.CopyComplete
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\TheEye.WebUl.dll
@@ -629,3 +628,4 @@ C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Medicine\MedicineGetList.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Medicine\MedicineOparation.cshtml.g.cs
 C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\Razor\Views\Medicine\Medicine.cshtml.g.cs
+C:\Users\ismet\Desktop\TheEye\SmartCityResarvation\TheEye\obj\Debug\netcoreapp3.1\TheEye.WebUl.MvcApplicationPartsAssemblyInfo.cache

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Options;
 using TheEye.Business.Abstract;
 using TheEye.Entities.Concrete;
 using TheEye.WebUl.Filters;
@@ -21,8 +22,10 @@ namespace TheEye.WebUl.Controllers
     {
         private ICompanyService _companyService;
         private IHostingEnvironment _environment;
-        public CompanyController(ICompanyService companyService, IHostingEnvironment enviroment)
+        private readonly ServiceModal _serviceModal;
+        public CompanyController(ICompanyService companyService, IHostingEnvironment enviroment, IOptions<ServiceModal> servicesOptions)
         {
+            _serviceModal = servicesOptions.Value;
             _companyService = companyService;
             _environment = enviroment ?? throw new ArgumentNullException(nameof(enviroment));
         }
@@ -51,7 +54,7 @@ namespace TheEye.WebUl.Controllers
             companyViewModal.CompanyImage = imagesPath;
             using (var client = new HttpClient())
             {
-                var response = await client.GetAsync(string.Format("http://192.168.1.3:5000/CompanyControlTax?TaxNo={0}&Name={1}", companyViewModal.CompanyTaxNo, companyViewModal.CompanyName));
+                var response = await client.GetAsync(string.Format("http://{0}:{1}/CompanyControlTax?TaxNo={2}&Name={3}",_serviceModal.IpAddress, _serviceModal.Port,  companyViewModal.CompanyTaxNo, companyViewModal.CompanyName));
                 var model = JsonConvert.DeserializeObject<IEnumerable<ServiceCompanyControl>>(
                     response.Content.ReadAsStringAsync().Result);
                 int companyType = 0;

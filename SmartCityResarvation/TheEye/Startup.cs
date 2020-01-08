@@ -10,6 +10,7 @@ using TheEye.Business.Concrete;
 using TheEye.DataAccess.Abstract;
 using TheEye.DataAccess.Concrete.EntityFramework;
 using TheEye.WebUl.Filters;
+using TheEye.WebUl.Models;
 
 namespace TheEye.WebUl
 {
@@ -34,6 +35,7 @@ namespace TheEye.WebUl
             services.AddScoped<IMedicineService, MedicineManager>();
             services.AddScoped<IMedicineDal, EfMedicineDal>();
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.Configure<ServiceModal>(Configuration.GetSection("Service"));
 
             services.AddScoped<LoginFilter>();
             services.AddDistributedMemoryCache();
