@@ -1,18 +1,4 @@
-# The Eye - AkıllıŞehirUygulaması
-
-# Projenin Amacı
-> İnsanların günlük yaşantılarını kolaylaştırmak için otopark , petrol istasyonu , eczane bilgilerini görebilmek  ve stok takibi yapabilmelerine olanak sağlamak.
-
-# Kullanılan Teknolojiler
-
-- Proje [ASP.NET CORE](https://docs.microsoft.com/tr-tr/aspnet/core/?view=aspnetcore-3.1) üzerinde katmanlı mimari üzerinde geliştirilmiştir.
-- Projede [MVC](https://dotnet.microsoft.com/apps/aspnet/mvc) tasarım deseni kullanılmıştır.
-- ORM aracı olarak [Entity FrameWork CORE](https://docs.microsoft.com/tr-tr/ef/core/) Kullanılmıştır.
-- Web site tasarımında [Bootstrap](https://getbootstrap.com/), [FontAwesome](https://fontawesome.com/) ve [jQuery](https://jquery.com/) kullanılmıştır.
-- Projenin Servisleri [Node.js](https://nodejs.org/en/) ile yazılmıştır.
-- Veritabanı olarak [MSSQL](https://www.microsoft.com/tr-tr/sql-server/sql-server-downloads) ve [MySQL](https://www.mysql.com/) kullanılmıştır.
-
-# The Eye - SmartCityWebSite
+# The Eye - Smart City Web Site
 
 # The Goal Of The Project
 >To enable people to see their parking, gas station, pharmacy information and to keep track of stock to make their daily lives easier.
