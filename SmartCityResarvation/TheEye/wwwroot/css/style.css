@@ -1,0 +1,97 @@
+﻿.content_header {
+    background-color: #f5f5f5;
+    color: #a9a9a9;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card-home {
+    margin-top: 50px;
+    top: 50px;
+}
+
+
+@media (min-width: 768px) {
+    .align-md-left {
+        text-align: left;
+    }
+
+    .align-md-right {
+        text-align: right;
+    }
+
+    .align-md-center {
+        text-align: center;
+    }
+
+    .mobile-phone {
+        display: none;
+    }
+    
+    .slider-size {
+        height: 30vw;
+    }
+
+    .card-img-top {
+        height: 15vw;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .align-sm-left {
+        text-align: left;
+    }
+
+    .align-sm-right {
+        text-align: right;
+    }
+
+    .align-sm-center {
+        text-align: center;
+    }
+
+    .desktop-phone {
+        display: none;
+    }
+}
+
+/*
+    Banner
+*/
+.breadcrumbs {
+    background: #475268;
+    color: #fff;
+    padding: 45px 0;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 3px 0 0;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/*
+    Footer
+*/
+footer {
+    background: #475268;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 50px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 300;
+}
+footer h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Fjalla One', sans-serif;
+}

@@ -1,0 +1,113 @@
+﻿@model TheEye.Entities.Concrete.User
+@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@ViewBag.Title | Admin - The Eye </title>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/loginform.css" rel="stylesheet" />
+    <link href="~/lib/fontawesome/css/all.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-header bg-warning text-center text-light">
+                        <h3>EYE ON</h3>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Giriş Yap</h1>
+                        <form asp-controller="Account" asp-action="SignIn" method="post" class="form-signin">
+
+                            <div class="form-label-group">
+                                <input asp-for="UserName" class="form-control" type="text" placeholder="Kullanıcı Adı" name="UserName" required>
+                                <label asp-for="UserName">Kullanıcı Adı</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input asp-for="UserPassword" class="form-control" type="password" placeholder="Şifre" name="UserPassword" required>
+                                <label asp-for="UserPassword">Şifre</label>
+                            </div>
+                            <button class="btn btn-lg btn-success btn-block text-uppercase" type="submit">Giriş Yap</button> 
+                            <br>
+                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModalLong">
+                                Kayıt Ol
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="exampleModalLongTitle">EYE ON Kayıt Olma Formu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form asp-controller="Account" asp-action="Register" method="post" class="form-signin">
+
+                        <div class="form-label-group">
+                            <input asp-for="UserName" name="UserName" type="text" id="inputUserName" class="form-control" required>
+                            <label asp-for="UserName">Kullanıcı Adı</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            <input asp-for="UserMail" name="UserMail" type="email" id="inputEmail" class="form-control" required>
+                            <label asp-for="UserMail">Email Adresi</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            <input asp-for="UserPhone" name="UserPhone" type="text" id="inputTelephoneNumber" class="form-control" required>
+                            <label asp-for="UserPhone">Telefon Numarası</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            <input asp-for="UserCity" name="UserCity" type="text" id="inputCity" class="form-control" required>
+                            <label asp-for="UserCity">Şehir</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            <input asp-for="UserDistrict" name="UserDistrict" type="text" id="inputDistrict" class="form-control" required>
+                            <label asp-for="UserDistrict">Bölge</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            <input asp-for="UserAdress" name="UserAdress" type="text" id="inputAddress" class="form-control" required>
+                            <label asp-for="UserAdress">Adres</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            <input asp-for="UserPassword" name="UserPassword" type="password" id="inputPassword" class="form-control" required>
+                            <label asp-for="UserPassword">Şifre</label>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-lg btn-success btn-block text-uppercase" type="submit">Kayıt Ol </button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/loginform.js"></script>
+    <script src="~/js/search.js"></script>
+</body>
+</html>

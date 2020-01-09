@@ -1,0 +1,86 @@
+﻿@model TheEye.Entities.Concrete.Medicine
+
+@{
+    ViewBag.Title = "Eczane İşlemleri";
+    Layout = "AdminSite/_AdminLayout";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title"> Eczane Bilgisi</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="Pharmacy" asp-action="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="Company.CompanyName">Eczane Adı:</label>
+                                    <input  asp-for="Company.CompanyName" type="text" class="form-control" placeholder="Eczane Adı" value="" required="" name="CompanyName">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label  asp-for="Company.CompanyMail">Eczane Mail Adresi:</label>
+                                    <input  asp-for="Company.CompanyMail"type="text" class="form-control" placeholder="Eczane Mail Adresi" value="" name="CompanyMail"
+                                           required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Company.CompanyPhone">Eczane Telefon Numarası:</label>
+                                    <input asp-for="Company.CompanyPhone" type="text" class="form-control" placeholder="Eczane Telefon Numarası" name="CompanyPhone"
+                                           required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="Company.CompanyCity">Şehir:</label>
+                                    <input asp-for="Company.CompanyCity" type="text" class="form-control" placeholder="Şehir" value="" name="CompanyCity"
+                                           required="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="Company.CompanyDistrict">Bölge:</label>
+                                    <input asp-for="Company.CompanyDistrict" type="text" class="form-control" placeholder="Bölge" value="" name="CompanyDistrict"
+                                           required="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="Company.CompanyTime">Kapanış Saati:</label>
+                                    <input asp-for="Company.CompanyTime" type="text" class="form-control" placeholder="Kapanış Saati" value="" name="
+                                           CompanyTime"
+                                           required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="Company.CompanyAdress">Eczane Adresi:</label>
+                                    <input asp-for="Company.CompanyAdress" type="text" class="form-control" placeholder="Eczane Adresi" value="" name="CompanyAdress"
+                                           required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                            <input type="hidden" asp-for="CompanyId"/>
+                            <div class="col-md-4">
+                                <button class="btn btn-primary btn-block" value="PharmacyOparations"> Katılım İsteği Gönder </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

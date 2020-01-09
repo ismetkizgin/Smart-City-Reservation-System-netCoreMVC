@@ -1,0 +1,57 @@
+﻿@model System.Collections.Generic.List<TheEye.Entities.Concrete.Company>
+@{
+    ViewBag.Title = "Eczane Listesi";
+    Layout = "AdminSite/_AdminLayout";
+}
+
+<div class="card-header">
+    <h4 class="card-title">Eczane Listesi</h4>
+</div>
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="text-primary">
+                <tr>
+                    <th>Eczane Adı</th>
+                    <th>Eczane Telefon Numarası</th>
+                    <th>Eczane Mail Adresi</th>
+                    <th>Şehir</th>
+                    <th>Bölge</th>
+                    <th>Kapanış Saati</th>
+                    <th>Eczane Adresi</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@item.CompanyName</td>
+                    <td>@item.CompanyPhone</td>
+                    <td>@item.CompanyMail</td>
+                    <td>@item.CompanyCity</td>
+                    <td>@item.CompanyDistrict</td>
+                    <td>@item.CompanyTime</td>
+                    <td>@item.CompanyAdress</td>
+                    <td>
+                        <a asp-controller="Medicine" asp-action="MedicineOparation" asp-route-pharmacyId="@item.CompanyId" class="btn btn-success">İlaç Ekle</a>
+                    </td>
+                    <td>
+                        <a asp-controller="Medicine" asp-action="MedicineGetList" asp-route-PharmacyId="@item.CompanyId" class="btn btn-success">İlaç Listesi</a>
+                    </td>
+                    <td>
+                        <a asp-controller="Company" asp-action="CompanyUpdate" asp-route-id="@item.CompanyId" class="btn btn-success">Firma Bilgi Güncelle</a>
+                    </td>
+                    <td>
+                        <a asp-controller="Company" asp-action="CompanyDelete" asp-route-id="@item.CompanyId" class="btn btn-danger text-light">Sil </a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+﻿@model TheEye.Entities.Concrete.User
+@{
+    ViewBag.Title = "Hesabım";
+    Layout = "AdminSite/_AdminLayout";
+}
+
+<div class="card-header">
+    <h5 class="title">Profili Güncelle</h5>
+</div>
+<div class="card-body">
+    <form asp-controller="Account" asp-action="AccountUpdate" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="UserName">Kullanıcı Adı</label>
+                    <input asp-for="UserName" name="UserName" type="text" id="inputUserName" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="UserMail">Email Adresi</label>
+                    <input asp-for="UserMail" name="UserMail" type="email" id="inputEmail" class="form-control" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="UserPhone">Telefon Numarası</label>
+                    <input asp-for="UserPhone" name="UserPhone" type="text" id="inputTelephoneNumber" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="UserAdress">Adres</label>
+                    <input asp-for="UserAdress" name="UserAdress" type="text" id="inputAddress" class="form-control" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="UserCity">Şehir</label>
+                    <input asp-for="UserCity" name="UserCity" type="text" id="inputCity" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="UserDistrict">Bölge</label>
+                    <input asp-for="UserDistrict" name="UserDistrict" type="text" id="inputDistrict" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="UserPassword">Şifre</label>
+                    <input asp-for="UserPassword" name="UserPassword" type="password" id="inputPassword" class="form-control" required>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" asp-for="UserId" name="UserId"/>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block" value="CompanyOparationCrud"> Katılım İsteği Gönder </button>
+            </div>
+        </div>
+    </form>
+</div>
