@@ -1,4 +1,4 @@
-# The Eye - SmartCityWebSite
+# The Eye - AkıllıŞehirUygulaması
 
 # Projenin Amacı
 > İnsanların günlük yaşantılarını kolaylaştırmak için otopark , petrol istasyonu , eczane bilgilerini görebilmek  ve stok takibi yapabilmelerine olanak sağlamak.
@@ -11,6 +11,8 @@
 - Web site tasarımında [Bootstrap](https://getbootstrap.com/), [FontAwesome](https://fontawesome.com/) ve [jQuery](https://jquery.com/) kullanılmıştır.
 - Projenin Servisleri [Node.js](https://nodejs.org/en/) ile yazılmıştır.
 - Veritabanı olarak [MSSQL](https://www.microsoft.com/tr-tr/sql-server/sql-server-downloads) ve [MySQL](https://www.mysql.com/) kullanılmıştır.
+
+# The Eye - SmartCityWebSite
 
 # The Goal Of The Project
 >To enable people to see their parking, gas station, pharmacy information and to keep track of stock to make their daily lives easier.
