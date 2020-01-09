@@ -3,5 +3,8 @@
   "name": "asp.net",
   "private": true,
   "devDependencies": {
+  },
+  "dependencies": {
+    "bootstrap": ">=4.3.1"
   }
 }
