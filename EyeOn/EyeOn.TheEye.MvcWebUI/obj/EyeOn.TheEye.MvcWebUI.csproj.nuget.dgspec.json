@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web Projects\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj": {}
+    "C:\\Users\\ismet\\Desktop\\TheEye\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj": {}
   },
   "projects": {
-    "D:\\Web Projects\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj": {
+    "C:\\Users\\ismet\\Desktop\\TheEye\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web Projects\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj",
+        "projectUniqueName": "C:\\Users\\ismet\\Desktop\\TheEye\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj",
         "projectName": "EyeOn.TheEye.MvcWebUI",
-        "projectPath": "D:\\Web Projects\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj",
-        "packagesPath": "C:\\Users\\Alihan\\.nuget\\packages\\",
-        "outputPath": "D:\\Web Projects\\EyeOn\\EyeOn.TheEye.MvcWebUI\\obj\\",
+        "projectPath": "C:\\Users\\ismet\\Desktop\\TheEye\\EyeOn\\EyeOn.TheEye.MvcWebUI\\EyeOn.TheEye.MvcWebUI.csproj",
+        "packagesPath": "C:\\Users\\ismet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ismet\\Desktop\\TheEye\\EyeOn\\EyeOn.TheEye.MvcWebUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alihan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Users\\ismet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\DevExpess\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -72,6 +72,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -80,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
